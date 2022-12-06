@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:type" content="website">
-<meta property="og:title" content="contact">
-<meta property="og:url" content="http://flytom.club/contact/index-1.html">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://flytom.club/categories/index.html">
 <meta property="og:site_name" content="Tom">
 <meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-26T02:10:56.481Z">
+<meta property="og:updated_time" content="2019-10-17T00:56:56.595Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="contact">
+<meta name="twitter:title" content="categories">
 <meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 
 
@@ -1115,7 +1115,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2022-12-06 21:08:17'>2022-12-06 20:08</time>
+            发布时间 : <time class="date" title='最后更新: 2022-12-06 21:24:05'>2022-12-06 20:08</time>
         
     </div>
     <div class="article-meta">
@@ -1264,7 +1264,8 @@
 <p>比如，你给name字段加了一个索引，你插入数据的时候，就会重新搞一棵B+树，B+树的叶子节点，也是数据页，但是这个数据页里仅仅放了主键字段和name字段。</p>
 <p>叶子节点的数据页的name值，跟主键索引一样的，都是按照大小排序的。同一个数据页里的name字段值都是大于上一个数据页里的name字段值。</p>
 <p>name字段的B+树也会构建多层索引页，这个索引页里放的是下一层的页号和最小name字段值。就像这样：</p>
-<p><img src="./images/sql2.png" alt=""></p>
+<p><img src="../../../../img/sql2.png" alt=""></p>
+<p><img src="../../../../../img/sql2.png" alt=""></p>
 <p>假设你要根据name字段来搜索数据，比如：<code>select * from user where name=‘xxx'</code>，过程与主键索引一样的。从name索引的根节点开始找，一层一层的向下找，一直找到叶子节点，定位到name字段值对应的主键值。</p>
 <p>但此时叶子节点的数据页没有完整所有字段，就需要根据主键到主键索引里去查找，从主键索引的根节点一路找到叶子节点，就可以找到这行数据的所有字段了，这个过程就叫<strong>回表</strong> (在开发中就应该避免回表频率)。</p>
 <p>二级索引，可以对多个字段建立联合索引，比如，<code>name + age + sex</code></p>
