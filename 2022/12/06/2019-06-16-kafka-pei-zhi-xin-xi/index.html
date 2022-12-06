@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <title>kafka配置信息 | Tom</title>
+  <meta name="keywords" content=" kafka ">
+  <meta name="description" content="kafka配置信息 | Tom">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:type" content="website">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://flytom.club/tags/index.html">
+<meta property="og:site_name" content="Tom">
+<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-16T04:54:31.734Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="tags">
+<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+
+
+<link rel="icon" href="/img/favicon.png">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0"></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+
+<script src="/js/iconfont.js?v=1.1.0"></script>
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value>
+  <input class="theme_blog_path" value>
+  <input id="theme_shortcut" value="true">
+  <input id="theme_highlight_on" value="true">
+  <input id="theme_code_copy" value="true">
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/favicon.png"/>
+</a>
+<div class="author">
+    <span>FlyTom</span>
+</div>
+
+<div class="icon">
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(46)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="binlog日志">
+                        
+                        binlog日志
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="canal">
+                        
+                        canal
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Docker">
+                        
+                        Docker
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Dubbo">
+                        
+                        Dubbo
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Elasticsearch">
+                        
+                        Elasticsearch
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Git Hexo">
+                        
+                        Git Hexo
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Java">
+                        
+                        Java
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Jenkins构建Vue项目">
+                        
+                        Jenkins构建Vue项目
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="JVM">
+                        
+                        JVM
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Linux">
+                        
+                        Linux
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Logstash">
+                        
+                        Logstash
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Maven">
+                        
+                        Maven
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="MQ">
+                        
+                        MQ
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Mybatis">
+                        
+                        Mybatis
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="quartz">
+                        
+                        quartz
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Redis">
+                        
+                        Redis
+                        <small>(3)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="seata分布式事务">
+                        
+                        seata分布式事务
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="shardingjdbc">
+                        
+                        shardingjdbc
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Spring系列">
+                        
+                        Spring系列
+                        <small>(5)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="SQL">
+                        
+                        SQL
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="SSO">
+                        
+                        SSO
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="tcp">
+                        
+                        tcp
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Zookeeper">
+                        
+                        Zookeeper
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="前端">
+                        
+                        前端
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="学习路线">
+                        
+                        学习路线
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="经验、总结">
+                        
+                        经验、总结
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+    </div>
+    <div>
+        
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="46">
+<input type="hidden" id="yelog_site_word_count" value="273.8k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>binlog日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>canal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>CAS-SSO</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker笔记</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Dubbo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Git Hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HashMap ConcurrentHashMap</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Java</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>java锁</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Jenkins</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JVM</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kafka</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Logstash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Maven</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Mybatis</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>quartz</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RabbitMQ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RocketMQ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shardingjdbc</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Spring</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringBoot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringCloud</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Spring系列注解</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tcp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Zookeeper笔记</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>经验、总结</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 "
+           href="/2022/12/06/springboot-zhong-spi-ji-zhi/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title=""></span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 tcp "
+           href="/2022/12/06/2022-12-06-tcp/"
+           data-tag="tcp"
+           data-author="" >
+            <span class="post-title" title="tcp">tcp</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 shardingjdbc "
+           href="/2022/12/06/2022-08-17-shardingjdbc/"
+           data-tag="shardingjdbc"
+           data-author="" >
+            <span class="post-title" title="shardingjdbc">shardingjdbc</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 canal "
+           href="/2022/12/06/2022-06-30-canal-de-shi-yong/"
+           data-tag="canal"
+           data-author="" >
+            <span class="post-title" title="canal">canal</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2022-04-11-rocketmq/"
+           data-tag="RocketMQ"
+           data-author="" >
+            <span class="post-title" title="RocketMQ笔记">RocketMQ笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 binlog日志 "
+           href="/2022/12/06/2021-12-30-mysql-binlod/"
+           data-tag="binlog日志"
+           data-author="" >
+            <span class="post-title" title="binlog日志">binlog日志</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 canal "
+           href="/2022/12/06/2021-12-20-canal-da-jian/"
+           data-tag="canal"
+           data-author="" >
+            <span class="post-title" title="canal搭建">canal搭建</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 经验、总结 "
+           href="/2022/12/06/2021-08-25-jing-yan/"
+           data-tag="经验、总结"
+           data-author="" >
+            <span class="post-title" title="经验、总结">经验、总结</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Jenkins构建Vue项目 "
+           href="/2022/12/06/2021-08-25-jenkins-gou-jian-vue-xiang-mu/"
+           data-tag="Jenkins"
+           data-author="" >
+            <span class="post-title" title="Jenkins构建Vue项目">Jenkins构建Vue项目</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2021-06-17-springcolud/"
+           data-tag="SpringCloud"
+           data-author="" >
+            <span class="post-title" title="SpringCloud笔记">SpringCloud笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 学习路线 "
+           href="/2022/12/06/2021-06-16-xue-xi-lu-xian/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="学习路线">学习路线</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 seata分布式事务 "
+           href="/2022/12/06/2021-06-07-seata-fen-bu-shi-shi-wu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="seata分布式事务">seata分布式事务</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2021-06-03-redisson/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redisson">redisson</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2021-03-31-mysql-zheng-li/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="mysql问题整理">mysql问题整理</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 JVM "
+           href="/2022/12/06/2020-05-09-jvm/"
+           data-tag="JVM"
+           data-author="" >
+            <span class="post-title" title="JVM">JVM</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2020-05-01-java-suo-li-jie/"
+           data-tag="java锁"
+           data-author="" >
+            <span class="post-title" title="java锁">java锁</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2020-04-16-map-ji-he-shen-ru/"
+           data-tag="HashMap ConcurrentHashMap"
+           data-author="" >
+            <span class="post-title" title="Map集合深入">Map集合深入</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SSO "
+           href="/2022/12/06/2020-03-19-sso-cas/"
+           data-tag="CAS-SSO"
+           data-author="" >
+            <span class="post-title" title="CAS-SSO">CAS-SSO</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Docker "
+           href="/2022/12/06/2020-03-18-docker/"
+           data-tag="Docker笔记"
+           data-author="" >
+            <span class="post-title" title="Docker笔记">Docker笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2020-03-09-springboot-an-li/"
+           data-tag="SpringBoot"
+           data-author="" >
+            <span class="post-title" title="SpringBoot 入门案例">SpringBoot 入门案例</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2020-03-09-redis-shen-ru/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redis深入">redis深入</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2020-03-09-redis-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redis基础笔记">redis基础笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Logstash "
+           href="/2022/12/06/2019-12-26-logstash-ji-chu/"
+           data-tag="Logstash"
+           data-author="" >
+            <span class="post-title" title="Logstash基础">Logstash基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-12-17-mysql-da-quan/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="MySQL大全">MySQL大全</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Linux "
+           href="/2022/12/06/2019-12-17-linux-ming-ling/"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="Linux基础命令">Linux基础命令</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 "
+           href="/2022/12/06/2019-12-04-vue-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-09-10-spring-xi-lie-zhu-jie/"
+           data-tag="Spring系列注解"
+           data-author="" >
+            <span class="post-title" title="Spring系列注解">Spring系列注解</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-07-21-java-duo-xian-cheng-bi-ji/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java多线程基础">java多线程基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-06-16-xian-cheng-chi-dui-lie/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="线程池队列">线程池队列</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-06-16-mysql-suo-yin/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="MySQL 索引">MySQL 索引</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Maven "
+           href="/2022/12/06/2019-06-16-maven-bi-ji/"
+           data-tag="Maven"
+           data-author="" >
+            <span class="post-title" title="Maven笔记">Maven笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-06-16-kafka-pei-zhi-xin-xi/"
+           data-tag="kafka"
+           data-author="" >
+            <span class="post-title" title="kafka配置信息">kafka配置信息</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-06-16-kafka-xue-xi-bi-ji/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="kafka学习笔记">kafka学习笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-05-12-rabbitmq/"
+           data-tag="RabbitMQ"
+           data-author="" >
+            <span class="post-title" title="RabbitMQ笔记">RabbitMQ笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-04-18-springboot-bi-ji/"
+           data-tag="SpringBoot"
+           data-author="" >
+            <span class="post-title" title="SpringBoot笔记">SpringBoot笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 quartz "
+           href="/2022/12/06/2019-04-11-quartz/"
+           data-tag="quartz"
+           data-author="" >
+            <span class="post-title" title="quartz">quartz</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Git Hexo "
+           href="/2022/12/06/2019-04-11-idea-git-hexo-de-shi-yong-fly-tom/"
+           data-tag="Git Hexo"
+           data-author="" >
+            <span class="post-title" title="Git">Git</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Elasticsearch "
+           href="/2022/12/06/2019-04-11-elasticsearch/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Elasticsearch笔记">Elasticsearch笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Dubbo "
+           href="/2022/12/06/2019-04-11-dubbo/"
+           data-tag="Dubbo"
+           data-author="" >
+            <span class="post-title" title="Dubbo笔记">Dubbo笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-02-03-sql-ji-chu-zhi-shi/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="SQL基础知识">SQL基础知识</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-02-03-spring-zhi-shi-dian/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-02-03-java-she-ji-mo-shi/"
+           data-tag="Java"
+           data-author="" >
+            <span class="post-title" title="java设计模式">java设计模式</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-02-03-java-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java基础笔记">java基础笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Mybatis "
+           href="/2022/12/06/2019-01-23-mybatis/"
+           data-tag="Mybatis"
+           data-author="" >
+            <span class="post-title" title="Mybatis笔记">Mybatis笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Zookeeper "
+           href="/2022/12/06/2018-11-02-zookeeper-bi-ji/"
+           data-tag="Zookeeper笔记"
+           data-author="" >
+            <span class="post-title" title="Zookeeper笔记">Zookeeper笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2018/12/17/2018-09-06-markdown-intro/"
+           data-tag="Markdown"
+           data-author="" >
+            <span class="post-title" title="一份简明的 Markdown 笔记与教程">一份简明的 Markdown 笔记与教程</span>
+            <span class="post-date" title="2018-12-17 00:00:00">2018/12/17</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-2019-06-16-kafka配置信息" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">kafka配置信息</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="MQ">MQ</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">kafka</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2021-06-02 22:31:00'>2022-12-06 20:08</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:1.7k</span>
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#介绍"><span class="toc-text">介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Kafka的特性"><span class="toc-text">Kafka的特性:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Kafka的使用场景："><span class="toc-text">Kafka的使用场景：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#集群配置"><span class="toc-text">集群配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#单机多breoker"><span class="toc-text">单机多breoker</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#多机多broker"><span class="toc-text">多机多broker</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#配置文件"><span class="toc-text">配置文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Kafka的特性-1"><span class="toc-text">Kafka的特性:</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#springboot整合"><span class="toc-text">springboot整合</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h3><blockquote>
+<p>  Kafka是分布式发布-订阅消息系统，最初由LinkedIn公司开发，之后成为之后成为Apache基金会的一部分，由Scala和Java编写。Kafka是一种快速、可扩展的、设计内在就是分布式的，分区的和可复制的提交日志服务。</p>
+</blockquote>
+<h4 id="Kafka的特性"><a href="#Kafka的特性" class="headerlink" title="Kafka的特性:"></a>Kafka的特性:</h4><ul>
+<li>高吞吐量、低延迟：kafka每秒可以处理几十万条消息，它的延迟最低只有几毫秒，每个topic可以分多个partition, consumer group 对partition进行consume操作。</li>
+<li>可扩展性：kafka集群支持热扩展</li>
+<li>持久性、可靠性：消息被持久化到本地磁盘，并且支持数据备份防止数据丢失</li>
+<li>容错性：允许集群中节点失败（若副本数量为n,则允许n-1个节点失败）</li>
+<li>高并发：支持数千个客户端同时读写</li>
+</ul>
+<h4 id="Kafka的使用场景："><a href="#Kafka的使用场景：" class="headerlink" title="Kafka的使用场景："></a>Kafka的使用场景：</h4><ul>
+<li>日志收集：一个公司可以用Kafka可以收集各种服务的log，通过kafka以统一接口服务的方式开放给各种consumer，例如hadoop、Hbase、Solr等。</li>
+<li>消息系统：解耦和生产者和消费者、缓存消息等。</li>
+<li>用户活动跟踪：Kafka经常被用来记录web用户或者app用户的各种活动，如浏览网页、搜索、点击等活动，这些活动信息被各个服务器发布到kafka的topic中，然后订阅者通过订阅这些topic来做实时的监控分析，或者装载到hadoop、数据仓库中做离线分析和挖掘。</li>
+<li>运营指标：Kafka也经常用来记录运营监控数据。包括收集各种分布式应用的数据，生产各种操作的集中反馈，比如报警和报告。</li>
+<li>流式处理：比如spark streaming和storm</li>
+<li>事件源</li>
+</ul>
+<h3 id="集群配置"><a href="#集群配置" class="headerlink" title="集群配置"></a>集群配置</h3><p>Kafka支持两种模式的集群搭建：</p>
+<ol>
+<li>单机多broker集群配置；</li>
+<li>多机多broker集群配置。</li>
+</ol>
+<h4 id="单机多breoker"><a href="#单机多breoker" class="headerlink" title="单机多breoker"></a>单机多breoker</h4><p>利用单节点部署多个broker。不同的broker不同的id，监听端口以及日志目录，如：</p>
+<p>将配置文件复制两份</p>
+<pre><code>cp config/server.properties config/server-1.properties
+cp config/server.properties config/server-2.properties </code></pre><p>修改配置文件信息</p>
+<pre><code>vim config/server-1.properties
+#修改内容
+broker.id=2
+listeners=PLAINTEXT://your.host.name:9093
+log.dirs=/data/kafka-logs-1
+
+
+vim config/server-2.properties
+#修改内容
+broker.id=3
+listeners=PLAINTEXT://your.host.name:9094
+log.dirs=/data/kafka-logs-2</code></pre><p>启动多个kafka服务</p>
+<pre><code>in/kafka-server-start.sh config/server-1.properties 
+
+bin/kafka-server-start.sh config/server-2.properties </code></pre><p>最后按照上面方法产生和消费信息。</p>
+<h4 id="多机多broker"><a href="#多机多broker" class="headerlink" title="多机多broker"></a>多机多broker</h4><p>分别在多个节点按上述方式安装Kafka，配置启动多个Zookeeper 实例。如：192.168.18.130、192.168.18.131、192.168.18.132三台机器</p>
+<p>分别配置多个机器上的Kafka服务 设置不同的broke id，zookeeper.connect设置如下:</p>
+<pre><code>zookeeper.connect=192.168.18.130:2181,192.168.18.131:2181,192.168.18.132:2181</code></pre><h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><pre><code>broker.id=0     #当前机器在集群中的唯一标识，和zookeeper的myid性质一样
+port=9092      #当前kafka对外提供服务的端口默认是9092
+host.name=10.181.65.180       #这个参数默认是关闭的，在0.8.1有个bug，DNS解析问题，失败率的问题。
+num.network.threads=3         #这个是borker进行网络处理的线程数
+num.io.threads=8              #这个是borker进行I/O处理的线程数
+log.dirs=/opt/kafka/kafkalogs/       #消息存放的目录，这个目录可以配置为“，”逗号分割的表达式，上面的num.io.threads要大于这个目录的个数这个目录，如果配置多个目录，新创建的topic他把消息持久化的地方是，当前以逗号分割的目录中，那个分区数最少就放那一个
+socket.send.buffer.bytes=102400      #发送缓冲区buffer大小，数据不是一下子就发送的，先回存储到缓冲区了到达一定的大小后在发送，能提高性能
+socket.receive.buffer.bytes=102400   #kafka接收缓冲区大小，当数据到达一定大小后在序列化到磁盘
+socket.request.max.bytes=104857600   #这个参数是向kafka请求消息或者向kafka发送消息的请请求的最大数，这个值不能超过java的堆栈大小
+num.partitions=1                     #默认的分区数，一个topic默认1个分区数
+log.retention.hours=168              #默认消息的最大持久化时间，168小时，7天
+message.max.byte=5242880             #消息保存的最大值5M
+default.replication.factor=2         #kafka保存消息的副本数，如果一个副本失效了，另一个还可以继续提供服务
+replica.fetch.max.bytes=5242880      #取消息的最大直接数
+log.segment.bytes=1073741824         #这个参数是：因为kafka的消息是以追加的形式落地到文件，当超过这个值的时候，kafka会新起一个文件
+log.retention.check.interval.ms=300000         #每隔300000毫秒去检查上面配置的log失效时间（log.retention.hours=168 ），到目录查看是否有过期的消息如果有，删除
+log.cleaner.enable=false                       #是否启用log压缩，一般不用启用，启用的话可以提高性能
+zookeeper.connect=10.181.65.180:2181,0.181.65.181:2181,0.181.65.182:2181             #设置zookeeper的连接端口</code></pre><h4 id="Kafka的特性-1"><a href="#Kafka的特性-1" class="headerlink" title="Kafka的特性:"></a>Kafka的特性:</h4><ul>
+<li>高吞吐量、低延迟：kafka每秒可以处理几十万条消息，它的延迟最低只有几毫秒，每个topic可以分多个partition, consumer group 对partition进行consume操作。</li>
+<li>可扩展性：kafka集群支持热扩展</li>
+<li>持久性、可靠性：消息被持久化到本地磁盘，并且支持数据备份防止数据丢失</li>
+<li>容错性：允许集群中节点失败（若副本数量为n,则允许n-1个节点失败）</li>
+<li>高并发：支持数千个客户端同时读写</li>
+</ul>
+<h3 id="springboot整合"><a href="#springboot整合" class="headerlink" title="springboot整合"></a>springboot整合</h3><p><a href="https://blog.csdn.net/qq_26869339/article/details/88324980" target="_blank" rel="noopener">https://blog.csdn.net/qq_26869339/article/details/88324980</a></p>
+<pre><code>#kafka配置信息
+kafka:
+  producer:
+    bootstrap-servers: 10.161.11.222:6667,10.161.11.223:6667,10.161.11.224:6667
+    batch-size: 16785                                   #一次最多发送数据量
+    retries: 1                                          #发送失败后的重复发送次数
+    buffer-memory: 33554432                             #32M批处理缓冲区
+    linger: 1
+  consumer:
+    bootstrap-servers: 10.161.11.222:6667,10.161.11.223:6667,10.161.11.224:6667
+    auto-offset-reset: earliest                         #最早未被消费的offset
+    group-id: log-hs-grou20
+    max-poll-records: 4639                              #批量消费一次最大拉取的数据量
+    enable-auto-commit: false                           #是否开启自动提交
+    auto-commit-interval: 1000                          #自动提交的间隔时间
+    session-timeout: 6000                               #连接超时时间
+    max-poll-interval: 2000                             #手动提交设置与poll的心跳数
+  listener:
+    batch-listener: true                                #是否开启批量消费，true表示批量消费
+    concurrency: 3                                      #设置消费的线程数
+    poll-timeout: 1500                                  #自动提交设置，如果消息队列中没有消息，等待timeout毫秒后，调用poll()方法。如果队列中有消息，立即消费消息，每次消费的消息的多少可以通过max.poll.records配置。
+    topics: hs-test,hs-test1</code></pre><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2017 FlyTom
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 642px;
+    }
+    .nav.fullscreen {
+        margin-left: -642px;
+    }
+    .nav-left {
+        width: 220px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 642px;
+        }
+        .nav.fullscreen {
+            margin-left: -642px;
+        }
+        .nav-left {
+            width: 250px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 642px;
+            margin-left: -642px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <title>Logstash基础 | Tom</title>
+  <meta name="keywords" content=" Logstash ">
+  <meta name="description" content="Logstash基础 | Tom">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:type" content="website">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://flytom.club/tags/index.html">
+<meta property="og:site_name" content="Tom">
+<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-16T04:54:31.734Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="tags">
+<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+
+
+<link rel="icon" href="/img/favicon.png">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0"></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+
+<script src="/js/iconfont.js?v=1.1.0"></script>
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value>
+  <input class="theme_blog_path" value>
+  <input id="theme_shortcut" value="true">
+  <input id="theme_highlight_on" value="true">
+  <input id="theme_code_copy" value="true">
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/favicon.png"/>
+</a>
+<div class="author">
+    <span>FlyTom</span>
+</div>
+
+<div class="icon">
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(46)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="binlog日志">
+                        
+                        binlog日志
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="canal">
+                        
+                        canal
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Docker">
+                        
+                        Docker
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Dubbo">
+                        
+                        Dubbo
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Elasticsearch">
+                        
+                        Elasticsearch
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Git Hexo">
+                        
+                        Git Hexo
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Java">
+                        
+                        Java
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Jenkins构建Vue项目">
+                        
+                        Jenkins构建Vue项目
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="JVM">
+                        
+                        JVM
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Linux">
+                        
+                        Linux
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Logstash">
+                        
+                        Logstash
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Maven">
+                        
+                        Maven
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="MQ">
+                        
+                        MQ
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Mybatis">
+                        
+                        Mybatis
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="quartz">
+                        
+                        quartz
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Redis">
+                        
+                        Redis
+                        <small>(3)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="seata分布式事务">
+                        
+                        seata分布式事务
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="shardingjdbc">
+                        
+                        shardingjdbc
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Spring系列">
+                        
+                        Spring系列
+                        <small>(5)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="SQL">
+                        
+                        SQL
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="SSO">
+                        
+                        SSO
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="tcp">
+                        
+                        tcp
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Zookeeper">
+                        
+                        Zookeeper
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="前端">
+                        
+                        前端
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="学习路线">
+                        
+                        学习路线
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="经验、总结">
+                        
+                        经验、总结
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+    </div>
+    <div>
+        
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="46">
+<input type="hidden" id="yelog_site_word_count" value="273.8k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>binlog日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>canal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>CAS-SSO</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker笔记</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Dubbo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Git Hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HashMap ConcurrentHashMap</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Java</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>java锁</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Jenkins</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JVM</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kafka</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Logstash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Maven</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Mybatis</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>quartz</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RabbitMQ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RocketMQ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shardingjdbc</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Spring</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringBoot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringCloud</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Spring系列注解</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tcp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Zookeeper笔记</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>经验、总结</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 "
+           href="/2022/12/06/springboot-zhong-spi-ji-zhi/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title=""></span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 tcp "
+           href="/2022/12/06/2022-12-06-tcp/"
+           data-tag="tcp"
+           data-author="" >
+            <span class="post-title" title="tcp">tcp</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 shardingjdbc "
+           href="/2022/12/06/2022-08-17-shardingjdbc/"
+           data-tag="shardingjdbc"
+           data-author="" >
+            <span class="post-title" title="shardingjdbc">shardingjdbc</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 canal "
+           href="/2022/12/06/2022-06-30-canal-de-shi-yong/"
+           data-tag="canal"
+           data-author="" >
+            <span class="post-title" title="canal">canal</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2022-04-11-rocketmq/"
+           data-tag="RocketMQ"
+           data-author="" >
+            <span class="post-title" title="RocketMQ笔记">RocketMQ笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 binlog日志 "
+           href="/2022/12/06/2021-12-30-mysql-binlod/"
+           data-tag="binlog日志"
+           data-author="" >
+            <span class="post-title" title="binlog日志">binlog日志</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 canal "
+           href="/2022/12/06/2021-12-20-canal-da-jian/"
+           data-tag="canal"
+           data-author="" >
+            <span class="post-title" title="canal搭建">canal搭建</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 经验、总结 "
+           href="/2022/12/06/2021-08-25-jing-yan/"
+           data-tag="经验、总结"
+           data-author="" >
+            <span class="post-title" title="经验、总结">经验、总结</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Jenkins构建Vue项目 "
+           href="/2022/12/06/2021-08-25-jenkins-gou-jian-vue-xiang-mu/"
+           data-tag="Jenkins"
+           data-author="" >
+            <span class="post-title" title="Jenkins构建Vue项目">Jenkins构建Vue项目</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2021-06-17-springcolud/"
+           data-tag="SpringCloud"
+           data-author="" >
+            <span class="post-title" title="SpringCloud笔记">SpringCloud笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 学习路线 "
+           href="/2022/12/06/2021-06-16-xue-xi-lu-xian/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="学习路线">学习路线</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 seata分布式事务 "
+           href="/2022/12/06/2021-06-07-seata-fen-bu-shi-shi-wu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="seata分布式事务">seata分布式事务</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2021-06-03-redisson/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redisson">redisson</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2021-03-31-mysql-zheng-li/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="mysql问题整理">mysql问题整理</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 JVM "
+           href="/2022/12/06/2020-05-09-jvm/"
+           data-tag="JVM"
+           data-author="" >
+            <span class="post-title" title="JVM">JVM</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2020-05-01-java-suo-li-jie/"
+           data-tag="java锁"
+           data-author="" >
+            <span class="post-title" title="java锁">java锁</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2020-04-16-map-ji-he-shen-ru/"
+           data-tag="HashMap ConcurrentHashMap"
+           data-author="" >
+            <span class="post-title" title="Map集合深入">Map集合深入</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SSO "
+           href="/2022/12/06/2020-03-19-sso-cas/"
+           data-tag="CAS-SSO"
+           data-author="" >
+            <span class="post-title" title="CAS-SSO">CAS-SSO</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Docker "
+           href="/2022/12/06/2020-03-18-docker/"
+           data-tag="Docker笔记"
+           data-author="" >
+            <span class="post-title" title="Docker笔记">Docker笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2020-03-09-springboot-an-li/"
+           data-tag="SpringBoot"
+           data-author="" >
+            <span class="post-title" title="SpringBoot 入门案例">SpringBoot 入门案例</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2020-03-09-redis-shen-ru/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redis深入">redis深入</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2020-03-09-redis-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redis基础笔记">redis基础笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Logstash "
+           href="/2022/12/06/2019-12-26-logstash-ji-chu/"
+           data-tag="Logstash"
+           data-author="" >
+            <span class="post-title" title="Logstash基础">Logstash基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-12-17-mysql-da-quan/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="MySQL大全">MySQL大全</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Linux "
+           href="/2022/12/06/2019-12-17-linux-ming-ling/"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="Linux基础命令">Linux基础命令</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 "
+           href="/2022/12/06/2019-12-04-vue-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-09-10-spring-xi-lie-zhu-jie/"
+           data-tag="Spring系列注解"
+           data-author="" >
+            <span class="post-title" title="Spring系列注解">Spring系列注解</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-07-21-java-duo-xian-cheng-bi-ji/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java多线程基础">java多线程基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-06-16-xian-cheng-chi-dui-lie/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="线程池队列">线程池队列</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-06-16-mysql-suo-yin/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="MySQL 索引">MySQL 索引</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Maven "
+           href="/2022/12/06/2019-06-16-maven-bi-ji/"
+           data-tag="Maven"
+           data-author="" >
+            <span class="post-title" title="Maven笔记">Maven笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-06-16-kafka-pei-zhi-xin-xi/"
+           data-tag="kafka"
+           data-author="" >
+            <span class="post-title" title="kafka配置信息">kafka配置信息</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-06-16-kafka-xue-xi-bi-ji/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="kafka学习笔记">kafka学习笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-05-12-rabbitmq/"
+           data-tag="RabbitMQ"
+           data-author="" >
+            <span class="post-title" title="RabbitMQ笔记">RabbitMQ笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-04-18-springboot-bi-ji/"
+           data-tag="SpringBoot"
+           data-author="" >
+            <span class="post-title" title="SpringBoot笔记">SpringBoot笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 quartz "
+           href="/2022/12/06/2019-04-11-quartz/"
+           data-tag="quartz"
+           data-author="" >
+            <span class="post-title" title="quartz">quartz</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Git Hexo "
+           href="/2022/12/06/2019-04-11-idea-git-hexo-de-shi-yong-fly-tom/"
+           data-tag="Git Hexo"
+           data-author="" >
+            <span class="post-title" title="Git">Git</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Elasticsearch "
+           href="/2022/12/06/2019-04-11-elasticsearch/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Elasticsearch笔记">Elasticsearch笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Dubbo "
+           href="/2022/12/06/2019-04-11-dubbo/"
+           data-tag="Dubbo"
+           data-author="" >
+            <span class="post-title" title="Dubbo笔记">Dubbo笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-02-03-sql-ji-chu-zhi-shi/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="SQL基础知识">SQL基础知识</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-02-03-spring-zhi-shi-dian/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-02-03-java-she-ji-mo-shi/"
+           data-tag="Java"
+           data-author="" >
+            <span class="post-title" title="java设计模式">java设计模式</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-02-03-java-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java基础笔记">java基础笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Mybatis "
+           href="/2022/12/06/2019-01-23-mybatis/"
+           data-tag="Mybatis"
+           data-author="" >
+            <span class="post-title" title="Mybatis笔记">Mybatis笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Zookeeper "
+           href="/2022/12/06/2018-11-02-zookeeper-bi-ji/"
+           data-tag="Zookeeper笔记"
+           data-author="" >
+            <span class="post-title" title="Zookeeper笔记">Zookeeper笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2018/12/17/2018-09-06-markdown-intro/"
+           data-tag="Markdown"
+           data-author="" >
+            <span class="post-title" title="一份简明的 Markdown 笔记与教程">一份简明的 Markdown 笔记与教程</span>
+            <span class="post-date" title="2018-12-17 00:00:00">2018/12/17</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-2019-12-26-Logstash基础" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Logstash基础</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Logstash">Logstash</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">Logstash</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2021-04-27 17:40:23'>2022-12-06 20:08</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:2.9k</span>
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#logstash配置文件说明-logstash"><span class="toc-text">logstash配置文件说明  logstash</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#input"><span class="toc-text">input</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#output"><span class="toc-text">output</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#filter"><span class="toc-text">filter</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pipeline配置语法"><span class="toc-text">pipeline配置语法</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>官方文档：<br><a href="https://www.elastic.co/guide/en/logstash/6.3/persistent-queues.html" target="_blank" rel="noopener">https://www.elastic.co/guide/en/logstash/6.3/persistent-queues.html</a><br>output kafka文档<br><a href="https://segmentfault.com/a/1190000016596051" target="_blank" rel="noopener">https://segmentfault.com/a/1190000016596051</a></p>
+<p>日志采集器Logstash其功能虽然强大，但是它依赖java、在数据量大的时候，Logstash进程会消耗过多的系统资源，这将严重影响业务系统的性能，而filebeat就是一个完美的替代者，它基于Go语言没有任何依赖，配置文件简单，格式明了，同时filebeat比logstash更加轻量级，所以占用系统资源极少，非常适合安装在生产机器上。这就是推荐使用filebeat，也是 ELK Stack 在 Agent 的第一选择。</p>
+<h3 id="logstash配置文件说明-logstash"><a href="#logstash配置文件说明-logstash" class="headerlink" title="logstash配置文件说明  logstash"></a>logstash配置文件说明  logstash</h3><p>logstash.yml  主配置文件</p>
+<pre><code># cat /etc/logstash/logstash.yml |grep -v ^#
+path.data: /data/logstash    #数据存储路径 
+path.config: /etc/logstash/conf.d/*.conf   #配置文件目录
+path.logs: /var/log/logstash   #日志输出路径
+# mkdir -p /data/logstash #创建data目录
+# chown logstash.logstash /data/logstash  #授权</code></pre><p> jvm.options    这个配置文件是有关jvm的配置，可以配置运行时内存的最大最小值，垃圾清理机制等</p>
+<pre><code>-Xms256m   #设置内存大小
+-Xmx256m</code></pre><p>startup.options   logstash运行相关的参数</p>
+<p>配置文件是写在/etc/logstash/conf.d/ 下，以.conf结尾。</p>
+<p>logstash配置文件</p>
+<p>logstash pipeline 包含两个必须的元素：input和output，和一个可选元素：filter。</p>
+<p> 从input读取事件源，（经过filter解析和处理之后），从output输出到目标存储库（elasticsearch或其他）。</p>
+<p> <img src="https://gitee.com/fly_tom/use/raw/master/ls.png" alt="image"></p>
+<p> <img src="https://gitee.com/fly_tom/use/raw/master/ls2.png" alt="image"></p>
+<p> <img src="https://gitee.com/fly_tom/use/raw/master/ls3.png" alt="image"></p>
+<p> Logstash的数据处理过程主要包括：Inputs, Filters, Outputs 三部分， 另外在Inputs和Outputs中可以使用Codecs对数据格式进行处理。这四个部分均以插件形式存在，在logstash.conf配置文件中设置需要使用的input，filter，output, codec插件，以实现特定的数据采集，数据处理，数据输出等功能</p>
+<p>Inputs：用于从数据源获取数据，常见的插件如file, syslog, redis, beats 等[详细参考]<br>Filters：用于处理数据如格式转换，数据派生等，常见的插件如grok, mutate, drop, clone, geoip等[详细参考]<br>Outputs：用于数据输出，常见的插件如elastcisearch，file, graphite, statsd等[详细参考]<br>Codecs：Codecs不是一个单独的流程，而是在输入和输出等插件中用于数据转换的模块，用于对数据进行编码处理，常见的插件如json，multiline</p>
+<h4 id="input"><a href="#input" class="headerlink" title="input"></a>input</h4><p> input部分，由于需要提取的是日志文件，一般使用file插件，该插件常用的几个参数是：</p>
+<p>path：指定日志文件路径。</p>
+<p>type：指定一个名称，设置type后，可以在后面的filter和output中对不同的type做不同的处理，适用于需要消费多个日志文件的场景。</p>
+<p>start_position：指定起始读取位置，“beginning”表示从文件头开始，“end”表示从文件尾开始（类似tail -f）。</p>
+<p>sincedb_path：与Logstash的一个坑有关。通常Logstash会记录每个文件已经被读取到的位置，保存在sincedb中，如果Logstash重启，那么对于同一个文件，会继续从上次记录的位置开始读取。如果想重新从头读取文件，需要删除sincedb文件，sincedb_path则是指定了该文件的路径。为了方便，我们可以根据需要将其设置为“/dev/null”，即不保存位置信息。</p>
+<pre><code>#整个配置文件分为三部分：input,filter,output
+#参考这里的介绍 https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html
+input {
+  #file可以多次使用，也可以只写一个file而设置它的path属性配置多个文件实现多文件监控
+  file {
+    #type是给结果增加了一个属性叫type值为"&lt;xxx&gt;"的条目。这里的type，对应了ES中index中的type，即如果输入ES时，没有指定type，那么这里的type将作为ES中index的type。
+    type =&gt; "apache-access" 
+    path =&gt; "/apphome/ptc/Windchill_10.0/Apache/logs/access_log*"
+    #start_position可以设置为beginning或者end，beginning表示从头开始读取文件，end表示读取最新的，这个也要和ignore_older一起使用。
+    start_position =&gt; beginning
+
+    sincedb_path =&gt; "/dev/null"      #记录文件上次读取位置；输出到null表示每次重启后都从文件首行开始解析
+
+     #坑：start_position仅在该文件从未被监听过的时候起作用，如果sincedb文件中已经有这个文件的inode记录了，那么logstash依然会冲记录过的pos开始读取数据。所以重复测试的时候每回需要删除sincedb文件，该文件一般在安装目录下的data/plugins/inputs/file/中
+    #优化：在file中添加sincedb_path =&gt; "/dev/null"，可以直接将sincedb写到黑洞中
+
+
+    #ignore_older表示了针对多久的文件进行监控，默认一天，单位为秒，可以自己定制，比如默认只读取一天内被修改的文件。
+    ignore_older =&gt; 604800
+    #add_field增加属性。这里使用了${HOSTNAME}，即本机的环境变量，如果要使用本机的环境变量，那么需要在启动命令上加--alow-env。
+    add_field =&gt; {"log_hostname"=&gt;"${HOSTNAME}"}
+    #这个值默认是\n 换行符，如果设置为空""，那么后果是每个字符代表一个event
+    delimiter =&gt; ""
+    #这个表示关闭超过（默认）3600秒后追踪文件。这个对于multiline来说特别有用。... 这个参数和logstash对文件的读取方式有关，两种方式read tail，如果是read
+    close_older =&gt; 3600
+    coodec =&gt; multiline {
+      pattern =&gt; "^\s"
+      #这个negate是否定的意思，意思跟pattern相反，也就是不满足patter的意思。
+#      negate =&gt; ""
+      #what有两个值可选 previous和next，举例说明，java的异常从第二行以空格开始，这里就可以pattern匹配空格开始，what设置为previous意思是空格开头这行跟上一行属于同一event。另一个例子，有时候一条命令太长，当以\结尾时表示这行属于跟下一行属于同一event，这时需要使用negate=&gt;true，what=&gt;'next'。
+      what =&gt; "previous"
+      auto_flush_interval =&gt; 60
+    }
+  }
+  file { 
+    type =&gt; "methodserver-log" 
+    path =&gt; "/apphome/ptc/Windchill_10.0/Windchill/logs/MethodServer-1604221021-32380.log" 
+    start_position =&gt; beginning 
+    sincedb_path =&gt; "/opt/logstash-2.3.1/sincedb_path/methodserver_process"
+#    ignore_older =&gt; 604800
+  }
+}
+filter{
+  #执行ruby程序，下面例子是将日期转化为字符串赋予daytag
+  ruby {
+    code =&gt; "event['daytag'] = event.timestamp.time.localtime.strftime('%Y-%m-%d')"
+  }
+  # if [path] =~ "access" {} else if [path] =~ "methodserver" {} else if [path] =~ "servermanager" {} else {} 注意语句结构
+  if [path] =~ "MethodServer" { #z这里的=~是匹配正则表达式
+    grok {
+      patterns_dir =&gt; ["/opt/logstash-2.3.1/patterns"] #自定义正则匹配
+#      Tue 4/12/16 14:24:17: TP-Processor2: hirecode----&gt;77LS
+      match =&gt; { "message" =&gt; "%{DAY:log_weekday} %{DATE_US:log_date} %{TIME:log_time}: %{GREEDYDATA:log_data}"}
+    }
+    #mutage是做转换用的
+    mutate { 
+      replace =&gt; { "type" =&gt; "apache" } #替换属性值
+      convert =&gt; { #类型转换
+        "bytes" =&gt; "integer" #例如还有float
+        "duration" =&gt; "integer"
+        "state" =&gt; "integer"
+      }
+    #date主要是用来处理文件内容中的日期的。内容中读取的是字符串，通过date将它转换为@timestamp。参考https://www.elastic.co/guide/en/logstash/current/plugins-filters-date.html#plugins-filters-date-match
+#    date {
+#      match =&gt; [ "logTime" , "dd/MMM/yyyy:HH:mm:ss Z" ]
+#    }
+  }else if [type] in ['tbg_qas','mbg_pre'] { # if ... else if ... else if ... else结构
+  }else {
+    drop{} # 将event丢弃
+  }
+}
+output {
+  stdout{ codec=&gt;rubydebug} # 直接输出，调试用起来方便
+  # 输出到redis
+  redis {
+    host =&gt; '10.120.20.208'
+    data_type =&gt; 'list'
+    key =&gt; '10.99.201.34:access_log_2016-04'
+  }
+  # 输出到ES
+  elasticsearch {
+    hosts =&gt;"192.168.0.15:9200"
+    index =&gt; "%{sysid}_%{type}"
+    document_type =&gt; "%{daytag}"
+  }
+}</code></pre><p>codec编码插件</p>
+<p>logstash实际上是一个input | codec | filter | codec |</p>
+<p>output的数据流。codec是用来decode、encode事件的。</p>
+<p>Multiline合并多行数据</p>
+<p>Multiline有三个设置比较重要：pattern、negate、what .</p>
+<p>pattern:必须设置，String类型，没有默认值。匹配的是正则表达式。上面配置中的含义是：通过SECOND_TIME字段与日志文件匹配，判断文件开始位置。</p>
+<p>negate：boolean类型，默认为false .如果没有匹配，否定正则表达式。</p>
+<p>what：必须设置，可以设置为previous或next。表示当与pattern匹配成功的时候，匹配行是归属上一个事件还是下一个事件</p>
+<p>根据上面的配置，还有两个设置：charset、patterns_dir。</p>
+<p>charset :一般都知道是编码，这个就不多说了。</p>
+<p>patterns_dir：从配置中看到的是一个文件路径。</p>
+<h4 id="output"><a href="#output" class="headerlink" title="output"></a>output</h4><p> output部分，将数据输出到消息队列，以redis为例，需要指定redis server和list key名称。另外，在测试阶段，可以使用stdout来查看输出信息。</p>
+<pre><code> # 输出到redis
+output {
+    if [type] == "example_nginx_access" {
+        redis {
+            host =&gt; "127.0.0.1"
+            port =&gt; "6379"
+            data_type =&gt; "list"
+            key =&gt; "logstash:example_nginx_access"
+        }
+      #  stdout {codec =&gt; rubydebug}
+    }
+}</code></pre><h4 id="filter"><a href="#filter" class="headerlink" title="filter"></a>filter</h4><p> 实际使用中根据自身需求从官方文档中查找适合自己业务的插件并使用即可，当然也可以编写自己的插件。</p>
+<p> <strong>grok：</strong><br> 但是不能是正则表达式的^ 和$进行结束判断</p>
+<blockquote>
+<p>是Logstash最重要的一个插件，用于将非结构化的文本数据转化为结构化的数据。grok内部使用正则语法对文本数据进行匹配，为了降低使用复杂度，其提供了一组pattern，我们可以直接调用pattern而不需要自己写正则表达式，参考源码grok-patterns。grok解析文本的语法格式是%{SYNTAX:SEMANTIC}，SYNTAX是pattern名称，SEMANTIC是需要生成的字段名称，使用工具Grok Debugger可以对解析语法进行调试。例如，在下面的配置中，我们先使用grok对输入的原始nginx日志信息（默认以message作为字段名）进行解析，并添加新的字段request_path_with_verb（该字段的值是verb和request_path的组合），然后对request_path字段做进一步解析。</p>
+</blockquote>
+<p><strong>kv：</strong> 用于将某个字段的值进行分解，类似于编程语言中的字符串Split。在下面的配置中，我们将request_args字段值按照“&amp;”进行分解，分解后的字段名称以“request_args_”作为前缀，并且丢弃重复的字段。</p>
+<p><strong>geoip：</strong> 用于根据IP信息生成地理位置信息，默认使用自带的一份GeoLiteCity database，也可以自己更换为最新的数据库，但是需要数据格式需要遵循Maxmind的格式（参考GeoLite），似乎目前只能支持legacy database，数据类型必须是.dat。下载GeoLiteCity.dat.gz后解压， 并将文件路径配置到source中即可。</p>
+<p><strong>translate：</strong> 用于检测某字段的值是否符合条件，如果符合条件则将其翻译成新的值，写入一个新的字段，匹配pattern可以通过YAML文件来配置。例如，在下面的配置中，我们对request_api字段翻译成更加易懂的文字描述。</p>
+<pre><code>filter {
+    grok {
+        match =&gt; {"message" =&gt; "%{IPORHOST:client_ip} \"%{TIMESTAMP_ISO8601:timestamp}\" \"%{WORD:verb} %{NOTSPACE:request_path} HTTP/%{NUMBER:httpversion}\" %{NUMBER:response_status:int} %{NUMBER:response_body_bytes:int} \"%{DATA:user_agent}\" \"%{DATA:http_referer}\" \"%{NOTSPACE:http_x_forwarder_for}\" \"%{NUMBER:request_time:float}\" \"%{DATA:upstream_resopnse_time}\" \"%{DATA:http_cookie}\" \"%{DATA:http_authorization}\" \"%{DATA:http_token}\""}
+        add_field =&gt; {"request_path_with_verb" =&gt; "%{verb} %{request_path}"}
+    }
+
+    grok {
+        match =&gt; {"request_path" =&gt; "%{URIPATH:request_api}(?:\?%{NOTSPACE:request_args}|)"}
+        add_field =&gt; {"request_annotation" =&gt; "%{request_api}"}
+    }
+
+    kv {
+        prefix =&gt; "request_args_"
+        field_split =&gt; "&amp;"
+        source =&gt; "request_args"
+        allow_duplicate_values =&gt; false
+    }
+
+    geoip {
+        source =&gt; "client_ip"
+        database =&gt; "/home/elktest/geoip_data/GeoLiteCity.dat"
+    }
+
+   translate {
+        field =&gt; request_path
+        destination =&gt; request_annotation
+        regex =&gt; true
+        exact =&gt; true
+        dictionary_path =&gt; "/home/elktest/api_annotation.yaml"
+        override =&gt; true
+    }
+}</code></pre><p>启动<br>接下来可以将文件保存为testLogs.conf文件，保存到logstash的bin路径下，进入logstash的bin路径下运行：</p>
+<p>bin/logstash -f testLogs.conf<br>//如果放到conf文件夹下<br>bin/logstash -f conf/testLogs.conf//路径要对应上，这里是conf/testLogs.conf<br>1<br>2<br>3<br>这篇博客，之前应该看过，也挺不错的 ，可以借鉴下</p>
+<p>logstash 后可以加：<br>      -f：指定配置文件，根据配置文件配置logstash<br>      -e：字符串，配置，默认“”stdin输入、stdout输出（在控制台输入、输出），可通过命令行接受设置<br>      -l：输出地址，默认控制台输出<br>      -t：测试配置文件是否正确后退出 </p>
+<h3 id="pipeline配置语法"><a href="#pipeline配置语法" class="headerlink" title="pipeline配置语法"></a>pipeline配置语法</h3><script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2017 FlyTom
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 642px;
+    }
+    .nav.fullscreen {
+        margin-left: -642px;
+    }
+    .nav-left {
+        width: 220px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 642px;
+        }
+        .nav.fullscreen {
+            margin-left: -642px;
+        }
+        .nav-left {
+            width: 250px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 642px;
+            margin-left: -642px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

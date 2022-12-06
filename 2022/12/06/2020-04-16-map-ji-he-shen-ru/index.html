@@ -1,0 +1,1449 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <title>Map集合深入 | Tom</title>
+  <meta name="keywords" content=" HashMap ConcurrentHashMap ">
+  <meta name="description" content="Map集合深入 | Tom">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:type" content="website">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://flytom.club/tags/index.html">
+<meta property="og:site_name" content="Tom">
+<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-16T04:54:31.734Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="tags">
+<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+
+
+<link rel="icon" href="/img/favicon.png">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0"></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+
+<script src="/js/iconfont.js?v=1.1.0"></script>
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value>
+  <input class="theme_blog_path" value>
+  <input id="theme_shortcut" value="true">
+  <input id="theme_highlight_on" value="true">
+  <input id="theme_code_copy" value="true">
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/favicon.png"/>
+</a>
+<div class="author">
+    <span>FlyTom</span>
+</div>
+
+<div class="icon">
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(46)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="binlog日志">
+                        
+                        binlog日志
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="canal">
+                        
+                        canal
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Docker">
+                        
+                        Docker
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Dubbo">
+                        
+                        Dubbo
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Elasticsearch">
+                        
+                        Elasticsearch
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Git Hexo">
+                        
+                        Git Hexo
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Java">
+                        
+                        Java
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Jenkins构建Vue项目">
+                        
+                        Jenkins构建Vue项目
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="JVM">
+                        
+                        JVM
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Linux">
+                        
+                        Linux
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Logstash">
+                        
+                        Logstash
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Maven">
+                        
+                        Maven
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="MQ">
+                        
+                        MQ
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Mybatis">
+                        
+                        Mybatis
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="quartz">
+                        
+                        quartz
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Redis">
+                        
+                        Redis
+                        <small>(3)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="seata分布式事务">
+                        
+                        seata分布式事务
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="shardingjdbc">
+                        
+                        shardingjdbc
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Spring系列">
+                        
+                        Spring系列
+                        <small>(5)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="SQL">
+                        
+                        SQL
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="SSO">
+                        
+                        SSO
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="tcp">
+                        
+                        tcp
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Zookeeper">
+                        
+                        Zookeeper
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="前端">
+                        
+                        前端
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="学习路线">
+                        
+                        学习路线
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="经验、总结">
+                        
+                        经验、总结
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+    </div>
+    <div>
+        
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="46">
+<input type="hidden" id="yelog_site_word_count" value="273.8k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>binlog日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>canal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>CAS-SSO</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker笔记</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Dubbo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Git Hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HashMap ConcurrentHashMap</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Java</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>java锁</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Jenkins</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JVM</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kafka</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Logstash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Maven</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Mybatis</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>quartz</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RabbitMQ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RocketMQ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shardingjdbc</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Spring</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringBoot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringCloud</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Spring系列注解</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tcp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Zookeeper笔记</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>经验、总结</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 "
+           href="/2022/12/06/springboot-zhong-spi-ji-zhi/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title=""></span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 tcp "
+           href="/2022/12/06/2022-12-06-tcp/"
+           data-tag="tcp"
+           data-author="" >
+            <span class="post-title" title="tcp">tcp</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 shardingjdbc "
+           href="/2022/12/06/2022-08-17-shardingjdbc/"
+           data-tag="shardingjdbc"
+           data-author="" >
+            <span class="post-title" title="shardingjdbc">shardingjdbc</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 canal "
+           href="/2022/12/06/2022-06-30-canal-de-shi-yong/"
+           data-tag="canal"
+           data-author="" >
+            <span class="post-title" title="canal">canal</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2022-04-11-rocketmq/"
+           data-tag="RocketMQ"
+           data-author="" >
+            <span class="post-title" title="RocketMQ笔记">RocketMQ笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 binlog日志 "
+           href="/2022/12/06/2021-12-30-mysql-binlod/"
+           data-tag="binlog日志"
+           data-author="" >
+            <span class="post-title" title="binlog日志">binlog日志</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 canal "
+           href="/2022/12/06/2021-12-20-canal-da-jian/"
+           data-tag="canal"
+           data-author="" >
+            <span class="post-title" title="canal搭建">canal搭建</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 经验、总结 "
+           href="/2022/12/06/2021-08-25-jing-yan/"
+           data-tag="经验、总结"
+           data-author="" >
+            <span class="post-title" title="经验、总结">经验、总结</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Jenkins构建Vue项目 "
+           href="/2022/12/06/2021-08-25-jenkins-gou-jian-vue-xiang-mu/"
+           data-tag="Jenkins"
+           data-author="" >
+            <span class="post-title" title="Jenkins构建Vue项目">Jenkins构建Vue项目</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2021-06-17-springcolud/"
+           data-tag="SpringCloud"
+           data-author="" >
+            <span class="post-title" title="SpringCloud笔记">SpringCloud笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 学习路线 "
+           href="/2022/12/06/2021-06-16-xue-xi-lu-xian/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="学习路线">学习路线</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 seata分布式事务 "
+           href="/2022/12/06/2021-06-07-seata-fen-bu-shi-shi-wu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="seata分布式事务">seata分布式事务</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2021-06-03-redisson/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redisson">redisson</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2021-03-31-mysql-zheng-li/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="mysql问题整理">mysql问题整理</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 JVM "
+           href="/2022/12/06/2020-05-09-jvm/"
+           data-tag="JVM"
+           data-author="" >
+            <span class="post-title" title="JVM">JVM</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2020-05-01-java-suo-li-jie/"
+           data-tag="java锁"
+           data-author="" >
+            <span class="post-title" title="java锁">java锁</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2020-04-16-map-ji-he-shen-ru/"
+           data-tag="HashMap ConcurrentHashMap"
+           data-author="" >
+            <span class="post-title" title="Map集合深入">Map集合深入</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SSO "
+           href="/2022/12/06/2020-03-19-sso-cas/"
+           data-tag="CAS-SSO"
+           data-author="" >
+            <span class="post-title" title="CAS-SSO">CAS-SSO</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Docker "
+           href="/2022/12/06/2020-03-18-docker/"
+           data-tag="Docker笔记"
+           data-author="" >
+            <span class="post-title" title="Docker笔记">Docker笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2020-03-09-springboot-an-li/"
+           data-tag="SpringBoot"
+           data-author="" >
+            <span class="post-title" title="SpringBoot 入门案例">SpringBoot 入门案例</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2020-03-09-redis-shen-ru/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redis深入">redis深入</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2020-03-09-redis-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redis基础笔记">redis基础笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Logstash "
+           href="/2022/12/06/2019-12-26-logstash-ji-chu/"
+           data-tag="Logstash"
+           data-author="" >
+            <span class="post-title" title="Logstash基础">Logstash基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-12-17-mysql-da-quan/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="MySQL大全">MySQL大全</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Linux "
+           href="/2022/12/06/2019-12-17-linux-ming-ling/"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="Linux基础命令">Linux基础命令</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 "
+           href="/2022/12/06/2019-12-04-vue-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-09-10-spring-xi-lie-zhu-jie/"
+           data-tag="Spring系列注解"
+           data-author="" >
+            <span class="post-title" title="Spring系列注解">Spring系列注解</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-07-21-java-duo-xian-cheng-bi-ji/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java多线程基础">java多线程基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-06-16-xian-cheng-chi-dui-lie/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="线程池队列">线程池队列</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-06-16-mysql-suo-yin/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="MySQL 索引">MySQL 索引</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Maven "
+           href="/2022/12/06/2019-06-16-maven-bi-ji/"
+           data-tag="Maven"
+           data-author="" >
+            <span class="post-title" title="Maven笔记">Maven笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-06-16-kafka-pei-zhi-xin-xi/"
+           data-tag="kafka"
+           data-author="" >
+            <span class="post-title" title="kafka配置信息">kafka配置信息</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-06-16-kafka-xue-xi-bi-ji/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="kafka学习笔记">kafka学习笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-05-12-rabbitmq/"
+           data-tag="RabbitMQ"
+           data-author="" >
+            <span class="post-title" title="RabbitMQ笔记">RabbitMQ笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-04-18-springboot-bi-ji/"
+           data-tag="SpringBoot"
+           data-author="" >
+            <span class="post-title" title="SpringBoot笔记">SpringBoot笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 quartz "
+           href="/2022/12/06/2019-04-11-quartz/"
+           data-tag="quartz"
+           data-author="" >
+            <span class="post-title" title="quartz">quartz</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Git Hexo "
+           href="/2022/12/06/2019-04-11-idea-git-hexo-de-shi-yong-fly-tom/"
+           data-tag="Git Hexo"
+           data-author="" >
+            <span class="post-title" title="Git">Git</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Elasticsearch "
+           href="/2022/12/06/2019-04-11-elasticsearch/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Elasticsearch笔记">Elasticsearch笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Dubbo "
+           href="/2022/12/06/2019-04-11-dubbo/"
+           data-tag="Dubbo"
+           data-author="" >
+            <span class="post-title" title="Dubbo笔记">Dubbo笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-02-03-sql-ji-chu-zhi-shi/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="SQL基础知识">SQL基础知识</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-02-03-spring-zhi-shi-dian/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-02-03-java-she-ji-mo-shi/"
+           data-tag="Java"
+           data-author="" >
+            <span class="post-title" title="java设计模式">java设计模式</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-02-03-java-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java基础笔记">java基础笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Mybatis "
+           href="/2022/12/06/2019-01-23-mybatis/"
+           data-tag="Mybatis"
+           data-author="" >
+            <span class="post-title" title="Mybatis笔记">Mybatis笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Zookeeper "
+           href="/2022/12/06/2018-11-02-zookeeper-bi-ji/"
+           data-tag="Zookeeper笔记"
+           data-author="" >
+            <span class="post-title" title="Zookeeper笔记">Zookeeper笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2018/12/17/2018-09-06-markdown-intro/"
+           data-tag="Markdown"
+           data-author="" >
+            <span class="post-title" title="一份简明的 Markdown 笔记与教程">一份简明的 Markdown 笔记与教程</span>
+            <span class="post-date" title="2018-12-17 00:00:00">2018/12/17</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-2020-04-16-Map集合深入" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">Map集合深入</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Java">Java</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">HashMap ConcurrentHashMap</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2021-04-27 17:40:23'>2022-12-06 20:08</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:1.8k</span>
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#红黑树"><span class="toc-text">红黑树</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HashMap为什么是线程不安全的"><span class="toc-text">HashMap为什么是线程不安全的</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-jdk1-7中的HashMap"><span class="toc-text">1. jdk1.7中的HashMap</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-扩容造成死循环分析过程"><span class="toc-text">1.1 扩容造成死循环分析过程</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-hash算法为简单的用key-mod链表的大小。"><span class="toc-text">1.hash算法为简单的用key mod链表的大小。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-最开始hash表size-2，key-3-7-5，则都在table-1-中。"><span class="toc-text">2.最开始hash表size=2，key=3,7,5，则都在table[1]中。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-然后进行resize，使size变成4。"><span class="toc-text">3.然后进行resize，使size变成4。</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-2-扩容造成数据丢失分析过程"><span class="toc-text">1.2 扩容造成数据丢失分析过程</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-jdk1-8中HashMap"><span class="toc-text">2.jdk1.8中HashMap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-text">总结</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>要掌握HashMap，首先还是需要了解数据结构，是有哪些结构组成</p>
+</blockquote>
+<h2 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a>红黑树</h2><h2 id="HashMap为什么是线程不安全的"><a href="#HashMap为什么是线程不安全的" class="headerlink" title="HashMap为什么是线程不安全的"></a>HashMap为什么是线程不安全的</h2><h3 id="1-jdk1-7中的HashMap"><a href="#1-jdk1-7中的HashMap" class="headerlink" title="1. jdk1.7中的HashMap"></a>1. jdk1.7中的HashMap</h3><p>在jdk1.8中对HashMap做了很多优化，这里先分析在jdk1.7中的问题，相信大家都知道在jdk1.7多线程环境下HashMap容易出现死循环，这里我们先用代码来模拟出现死循环的情况：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HashMapTest</span> <span class="token punctuation">{</span>  
+     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+         HashMapThread thread0 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMapThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+         HashMapThread thread1 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMapThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+         HashMapThread thread2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMapThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+         HashMapThread thread3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMapThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+         HashMapThread thread4 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMapThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+         thread0<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+         thread1<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+         thread2<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+         thread3<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+         thread4<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+     <span class="token punctuation">}</span>  
+ <span class="token punctuation">}</span>  
+
+ <span class="token keyword">class</span> <span class="token class-name">HashMapThread</span> <span class="token keyword">extends</span> <span class="token class-name">Thread</span> <span class="token punctuation">{</span>  
+     <span class="token keyword">private</span> <span class="token keyword">static</span> AtomicInteger ai <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">AtomicInteger</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+     <span class="token keyword">private</span> <span class="token keyword">static</span> Map<span class="token operator">&lt;</span>Integer<span class="token punctuation">,</span> Integer<span class="token operator">></span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+
+     <span class="token annotation punctuation">@Override</span>  
+     <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+         <span class="token keyword">while</span> <span class="token punctuation">(</span>ai<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">1000000</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+             map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span>ai<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ai<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+             ai<span class="token punctuation">.</span><span class="token function">incrementAndGet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+         <span class="token punctuation">}</span>  
+     <span class="token punctuation">}</span>  
+ <span class="token punctuation">}</span></code></pre>
+<p>上述代码比较简单，就是开多个线程不断进行put操作，并且HashMap与AtomicInteger都是全局共享的。在多运行几次该代码后，出现如下死循环情形：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc43.png" alt=""></p>
+<p>其中有几次还会出现数组越界的情况：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc44.png" alt=""></p>
+<p>这里我们着重分析为什么会出现死循环的情况，通过jps和jstack命名查看死循环情况，结果如下：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc45.png" alt=""></p>
+<p>从堆栈信息中可以看到出现死循环的位置，通过该信息可明确知道死循环发生在HashMap的扩容函数中，根源在<strong>transfer函数</strong>中，jdk1.7中HashMap的transfer函数如下：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">void</span> <span class="token function">transfer</span><span class="token punctuation">(</span>Entry<span class="token punctuation">[</span><span class="token punctuation">]</span> newTable<span class="token punctuation">,</span> <span class="token keyword">boolean</span> rehash<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+     <span class="token keyword">int</span> newCapacity <span class="token operator">=</span> newTable<span class="token punctuation">.</span>length<span class="token punctuation">;</span>  
+     <span class="token keyword">for</span> <span class="token punctuation">(</span>Entry<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> e <span class="token operator">:</span> table<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+         <span class="token keyword">while</span><span class="token punctuation">(</span>null <span class="token operator">!=</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+             Entry<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> next <span class="token operator">=</span> e<span class="token punctuation">.</span>next<span class="token punctuation">;</span>  
+             <span class="token keyword">if</span> <span class="token punctuation">(</span>rehash<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+                e<span class="token punctuation">.</span>hash <span class="token operator">=</span> null <span class="token operator">==</span> e<span class="token punctuation">.</span>key <span class="token operator">?</span> <span class="token number">0</span> <span class="token operator">:</span> <span class="token function">hash</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+             <span class="token punctuation">}</span>  
+             <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token function">indexFor</span><span class="token punctuation">(</span>e<span class="token punctuation">.</span>hash<span class="token punctuation">,</span> newCapacity<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+             e<span class="token punctuation">.</span>next <span class="token operator">=</span> newTable<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>  
+             newTable<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> e<span class="token punctuation">;</span>  
+             e <span class="token operator">=</span> next<span class="token punctuation">;</span>  
+          <span class="token punctuation">}</span>  
+      <span class="token punctuation">}</span>  
+<span class="token punctuation">}</span></code></pre>
+<p><strong>总结下该函数的主要作用：</strong></p>
+<p>在对table进行扩容到newTable后，需要将原来数据转移到newTable中，注意10-12行代码，这里可以看出在转移元素的过程中，使用的是头插法，也就是链表的顺序会翻转，这里也是形成死循环的关键点。下面进行详细分析。</p>
+<h4 id="1-1-扩容造成死循环分析过程"><a href="#1-1-扩容造成死循环分析过程" class="headerlink" title="1.1 扩容造成死循环分析过程"></a>1.1 扩容造成死循环分析过程</h4><p>前提条件：</p>
+<p>这里假设</p>
+<h2 id="1-hash算法为简单的用key-mod链表的大小。"><a href="#1-hash算法为简单的用key-mod链表的大小。" class="headerlink" title="1.hash算法为简单的用key mod链表的大小。"></a>1.hash算法为简单的用key mod链表的大小。</h2><h2 id="2-最开始hash表size-2，key-3-7-5，则都在table-1-中。"><a href="#2-最开始hash表size-2，key-3-7-5，则都在table-1-中。" class="headerlink" title="2.最开始hash表size=2，key=3,7,5，则都在table[1]中。"></a>2.最开始hash表size=2，key=3,7,5，则都在table[1]中。</h2><h2 id="3-然后进行resize，使size变成4。"><a href="#3-然后进行resize，使size变成4。" class="headerlink" title="3.然后进行resize，使size变成4。"></a>3.然后进行resize，使size变成4。</h2><p>未resize前的数据结构如下：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc46.png" alt=""></p>
+<p>如果在单线程环境下，最后的结果如下：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc47.png" alt=""></p>
+<p>这里的转移过程，不再进行详述，只要理解transfer函数在做什么，其转移过程以及如何对链表进行反转应该不难。</p>
+<p>然后在多线程环境下，假设有两个线程A和B都在进行put操作。线程A在执行到transfer函数中第11行代码处挂起，因为该函数在这里分析的地位非常重要，因此再次贴出来。</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc48.png" alt=""></p>
+<p>此时线程A中运行结果如下：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc49.png" alt=""></p>
+<p>线程A挂起后，此时线程B正常执行，并完成resize操作，结果如下：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc50.png" alt=""></p>
+<p><strong>这里需要特别注意的点：由于线程B已经执行完毕，根据Java内存模型，现在newTable和table中的Entry都是主存中最新值：7.next=3，3.next=null。</strong></p>
+<p>此时切换到线程A上，在线程A挂起时内存中值如下：e=3，next=7，newTable[3]=null，代码执行过程如下：</p>
+<p><code>newTable[3]=e ----&gt; newTable[3]=3  
+e=next ----&gt; e=7</code></p>
+<p>此时结果如下：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc51.png" alt=""></p>
+<p>继续循环：</p>
+<p><code>e=7  
+next=e.next ----&gt; next=3【从主存中取值】  
+e.next=newTable[3] ----&gt; e.next=3【从主存中取值】  
+newTable[3]=e ----&gt; newTable[3]=7  
+e=next ----&gt; e=3</code></p>
+<p>结果如下：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc58.png" alt=""></p>
+<p>再次进行循环：</p>
+<p><code>e=3  
+next=e.next ----&gt; next=null  
+e.next=newTable[3] ----&gt; e.next=7 即：3.next=7  
+newTable[3]=e ----&gt; newTable[3]=3  
+e=next ----&gt; e=null</code></p>
+<p>注意此次循环：e.next=7，而在上次循环中7.next=3，出现环形链表，并且此时e=null循环结束。</p>
+<p>结果如下：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc52.png" alt=""></p>
+<p>在后续操作中只要涉及轮询hashmap的数据结构，就会在这里发生死循环，造成悲剧。</p>
+<h4 id="1-2-扩容造成数据丢失分析过程"><a href="#1-2-扩容造成数据丢失分析过程" class="headerlink" title="1.2 扩容造成数据丢失分析过程"></a>1.2 扩容造成数据丢失分析过程</h4><p>遵照上述分析过程，初始时：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc53.png" alt=""></p>
+<p>线程A和线程B进行put操作，同样线程A挂起：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc54.png" alt=""></p>
+<p>此时线程A的运行结果如下：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc55.png" alt=""></p>
+<p>此时线程B已获得CPU时间片，并完成resize操作：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc56.png" alt=""></p>
+<p>同样注意由于线程B执行完成，newTable和table都为最新值：<strong>5.next=null</strong>。</p>
+<p>此时切换到线程A，在线程A挂起时：<strong>e=7，next=5，newTable[3]=null。</strong></p>
+<p>执行newtable[i]=e，就将**7放在了table[3]**的位置，此时next=5。接着进行下一次循环：</p>
+<p><code>e=5  
+next=e.next ----&gt; next=null，从主存中取值  
+e.next=newTable[1] ----&gt; e.next=5，从主存中取值  
+newTable[1]=e ----&gt; newTable[1]=5  
+e=next ----&gt; e=null</code></p>
+<p>将5放置在table[1]位置，此时e=null循环结束，<strong>3元素丢失</strong>，并形成<strong>环形链表</strong>。并在后续操作hashmap时造成死循环。</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/jc57.png" alt=""></p>
+<h3 id="2-jdk1-8中HashMap"><a href="#2-jdk1-8中HashMap" class="headerlink" title="2.jdk1.8中HashMap"></a>2.jdk1.8中HashMap</h3><p>在jdk1.8中对HashMap进行了优化，在发生hash碰撞，不再采用头插法方式，而是直接插入链表尾部，因此不会出现环形链表的情况，但是在多线程的情况下仍然不安全，这里我们看jdk1.8中HashMap的put操作源码：</p>
+<pre class=" language-java"><code class="language-java"><span class="token keyword">final</span> V <span class="token function">putVal</span><span class="token punctuation">(</span><span class="token keyword">int</span> hash<span class="token punctuation">,</span> K key<span class="token punctuation">,</span> V value<span class="token punctuation">,</span> <span class="token keyword">boolean</span> onlyIfAbsent<span class="token punctuation">,</span><span class="token keyword">boolean</span> evict<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+   Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span><span class="token punctuation">[</span><span class="token punctuation">]</span> tab<span class="token punctuation">;</span> Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> p<span class="token punctuation">;</span> <span class="token keyword">int</span> n<span class="token punctuation">,</span> i<span class="token punctuation">;</span>  
+   <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>tab <span class="token operator">=</span> table<span class="token punctuation">)</span> <span class="token operator">==</span> null <span class="token operator">||</span> <span class="token punctuation">(</span>n <span class="token operator">=</span> tab<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>  
+       n <span class="token operator">=</span> <span class="token punctuation">(</span>tab <span class="token operator">=</span> <span class="token function">resize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span>  
+   <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>p <span class="token operator">=</span> tab<span class="token punctuation">[</span>i <span class="token operator">=</span> <span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">&amp;</span> hash<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// 如果没有hash碰撞则直接插入元素  </span>
+       tab<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">newNode</span><span class="token punctuation">(</span>hash<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value<span class="token punctuation">,</span> null<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+   <span class="token keyword">else</span> <span class="token punctuation">{</span>  
+       Node<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span> e<span class="token punctuation">;</span> K k<span class="token punctuation">;</span>  
+       <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">.</span>hash <span class="token operator">==</span> hash <span class="token operator">&amp;&amp;</span>  
+           <span class="token punctuation">(</span><span class="token punctuation">(</span>k <span class="token operator">=</span> p<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token operator">==</span> key <span class="token operator">||</span> <span class="token punctuation">(</span>key <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> key<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  
+           e <span class="token operator">=</span> p<span class="token punctuation">;</span>  
+       <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>p <span class="token keyword">instanceof</span> <span class="token class-name">TreeNode</span><span class="token punctuation">)</span>  
+           e <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>TreeNode<span class="token operator">&lt;</span>K<span class="token punctuation">,</span>V<span class="token operator">></span><span class="token punctuation">)</span>p<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">putTreeVal</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> tab<span class="token punctuation">,</span> hash<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+       <span class="token keyword">else</span> <span class="token punctuation">{</span>  
+           <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> binCount <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token punctuation">;</span> <span class="token operator">++</span>binCount<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+               <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>e <span class="token operator">=</span> p<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token operator">==</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+                   p<span class="token punctuation">.</span>next <span class="token operator">=</span> <span class="token function">newNode</span><span class="token punctuation">(</span>hash<span class="token punctuation">,</span> key<span class="token punctuation">,</span> value<span class="token punctuation">,</span> null<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+                   <span class="token keyword">if</span> <span class="token punctuation">(</span>binCount <span class="token operator">>=</span> TREEIFY_THRESHOLD <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">// -1 for 1st  </span>
+                       <span class="token function">treeifyBin</span><span class="token punctuation">(</span>tab<span class="token punctuation">,</span> hash<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+                   <span class="token keyword">break</span><span class="token punctuation">;</span>  
+               <span class="token punctuation">}</span>  
+               <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>hash <span class="token operator">==</span> hash <span class="token operator">&amp;&amp;</span>  
+                   <span class="token punctuation">(</span><span class="token punctuation">(</span>k <span class="token operator">=</span> e<span class="token punctuation">.</span>key<span class="token punctuation">)</span> <span class="token operator">==</span> key <span class="token operator">||</span> <span class="token punctuation">(</span>key <span class="token operator">!=</span> null <span class="token operator">&amp;&amp;</span> key<span class="token punctuation">.</span><span class="token function">equals</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  
+                   <span class="token keyword">break</span><span class="token punctuation">;</span>  
+               p <span class="token operator">=</span> e<span class="token punctuation">;</span>  
+           <span class="token punctuation">}</span>  
+       <span class="token punctuation">}</span>  
+       <span class="token keyword">if</span> <span class="token punctuation">(</span>e <span class="token operator">!=</span> null<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment" spellcheck="true">// existing mapping for key  </span>
+           V oldValue <span class="token operator">=</span> e<span class="token punctuation">.</span>value<span class="token punctuation">;</span>  
+           <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>onlyIfAbsent <span class="token operator">||</span> oldValue <span class="token operator">==</span> null<span class="token punctuation">)</span>  
+               e<span class="token punctuation">.</span>value <span class="token operator">=</span> value<span class="token punctuation">;</span>  
+           <span class="token function">afterNodeAccess</span><span class="token punctuation">(</span>e<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+           <span class="token keyword">return</span> oldValue<span class="token punctuation">;</span>  
+       <span class="token punctuation">}</span>  
+   <span class="token punctuation">}</span>  
+   <span class="token operator">++</span>modCount<span class="token punctuation">;</span>  
+   <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">++</span>size <span class="token operator">></span> threshold<span class="token punctuation">)</span>  
+       <span class="token function">resize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+   <span class="token function">afterNodeInsertion</span><span class="token punctuation">(</span>evict<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+   <span class="token keyword">return</span> null<span class="token punctuation">;</span>  
+  <span class="token punctuation">}</span></code></pre>
+<p>这是jdk1.8中HashMap中put操作的主函数， 注意第6行代码，如果没有hash碰撞则会直接插入元素。如果线程A和线程B同时进行put操作，刚好这两条不同的数据hash值一样，并且该位置数据为null，所以这线程A、B都会进入第6行代码中。假设一种情况，线程A进入后还未进行数据插入时挂起，而线程B正常执行，从而正常插入数据，然后线程A获取CPU时间片，此时线程A不用再进行hash判断了，问题出现：线程A会把线程B插入的数据给<strong>覆盖</strong>，发生线程不安全。</p>
+<p>这里只是简要分析下jdk1.8中HashMap出现的线程不安全问题的体现，后续将会对java的集合框架进行总结，到时再进行具体分析。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>首先HashMap是<strong>线程不安全</strong>的，其主要体现：</p>
+<p>#1.在jdk1.7中，在多线程环境下，扩容时会造成环形链或数据丢失。</p>
+<p>#2.在jdk1.8中，在多线程环境下，会发生数据覆盖的情况。</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2017 FlyTom
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 642px;
+    }
+    .nav.fullscreen {
+        margin-left: -642px;
+    }
+    .nav-left {
+        width: 220px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 642px;
+        }
+        .nav.fullscreen {
+            margin-left: -642px;
+        }
+        .nav-left {
+            width: 250px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 642px;
+            margin-left: -642px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>

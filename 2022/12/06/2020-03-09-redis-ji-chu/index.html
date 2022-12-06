@@ -1,0 +1,1926 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <title>redis基础笔记 | Tom</title>
+  <meta name="keywords" content>
+  <meta name="description" content="redis基础笔记 | Tom">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:type" content="website">
+<meta property="og:title" content="tags">
+<meta property="og:url" content="http://flytom.club/tags/index.html">
+<meta property="og:site_name" content="Tom">
+<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-10-16T04:54:31.734Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="tags">
+<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
+
+
+<link rel="icon" href="/img/favicon.png">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0"></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+
+<script src="/js/iconfont.js?v=1.1.0"></script>
+
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value>
+  <input class="theme_blog_path" value>
+  <input id="theme_shortcut" value="true">
+  <input id="theme_highlight_on" value="true">
+  <input id="theme_code_copy" value="true">
+</div>
+
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/favicon.png"/>
+</a>
+<div class="author">
+    <span>FlyTom</span>
+</div>
+
+<div class="icon">
+    
+</div>
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="全部文章">全部文章
+            
+                <small>(46)</small>
+            
+        </div>
+    </li>
+    
+        
+            
+                <li>
+                    <div data-rel="binlog日志">
+                        
+                        binlog日志
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="canal">
+                        
+                        canal
+                        <small>(2)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Docker">
+                        
+                        Docker
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Dubbo">
+                        
+                        Dubbo
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Elasticsearch">
+                        
+                        Elasticsearch
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Git Hexo">
+                        
+                        Git Hexo
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Java">
+                        
+                        Java
+                        <small>(6)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Jenkins构建Vue项目">
+                        
+                        Jenkins构建Vue项目
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="JVM">
+                        
+                        JVM
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Linux">
+                        
+                        Linux
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Logstash">
+                        
+                        Logstash
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Maven">
+                        
+                        Maven
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="MQ">
+                        
+                        MQ
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Mybatis">
+                        
+                        Mybatis
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="quartz">
+                        
+                        quartz
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Redis">
+                        
+                        Redis
+                        <small>(3)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="seata分布式事务">
+                        
+                        seata分布式事务
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="shardingjdbc">
+                        
+                        shardingjdbc
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Spring系列">
+                        
+                        Spring系列
+                        <small>(5)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="SQL">
+                        
+                        SQL
+                        <small>(4)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="SSO">
+                        
+                        SSO
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="tcp">
+                        
+                        tcp
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="Zookeeper">
+                        
+                        Zookeeper
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="前端">
+                        
+                        前端
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="学习路线">
+                        
+                        学习路线
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+        
+            
+                <li>
+                    <div data-rel="经验、总结">
+                        
+                        经验、总结
+                        <small>(1)</small>
+                        
+                    </div>
+                    
+                </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+    </div>
+    <div>
+        
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="46">
+<input type="hidden" id="yelog_site_word_count" value="273.8k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索 快捷键 i"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图 快捷键 w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>binlog日志</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>canal</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>CAS-SSO</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Docker笔记</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Dubbo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Git Hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HashMap ConcurrentHashMap</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Java</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>java锁</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Jenkins</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JVM</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>kafka</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Linux</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Logstash</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Maven</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Mybatis</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>quartz</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RabbitMQ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RocketMQ</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>shardingjdbc</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Spring</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringBoot</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SpringCloud</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Spring系列注解</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>SQL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>tcp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Zookeeper笔记</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>经验、总结</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <div id="local-search-result">
+
+    </div>
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="全部文章 "
+           href="/2022/12/06/springboot-zhong-spi-ji-zhi/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title=""></span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 tcp "
+           href="/2022/12/06/2022-12-06-tcp/"
+           data-tag="tcp"
+           data-author="" >
+            <span class="post-title" title="tcp">tcp</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 shardingjdbc "
+           href="/2022/12/06/2022-08-17-shardingjdbc/"
+           data-tag="shardingjdbc"
+           data-author="" >
+            <span class="post-title" title="shardingjdbc">shardingjdbc</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 canal "
+           href="/2022/12/06/2022-06-30-canal-de-shi-yong/"
+           data-tag="canal"
+           data-author="" >
+            <span class="post-title" title="canal">canal</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2022-04-11-rocketmq/"
+           data-tag="RocketMQ"
+           data-author="" >
+            <span class="post-title" title="RocketMQ笔记">RocketMQ笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 binlog日志 "
+           href="/2022/12/06/2021-12-30-mysql-binlod/"
+           data-tag="binlog日志"
+           data-author="" >
+            <span class="post-title" title="binlog日志">binlog日志</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 canal "
+           href="/2022/12/06/2021-12-20-canal-da-jian/"
+           data-tag="canal"
+           data-author="" >
+            <span class="post-title" title="canal搭建">canal搭建</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 经验、总结 "
+           href="/2022/12/06/2021-08-25-jing-yan/"
+           data-tag="经验、总结"
+           data-author="" >
+            <span class="post-title" title="经验、总结">经验、总结</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Jenkins构建Vue项目 "
+           href="/2022/12/06/2021-08-25-jenkins-gou-jian-vue-xiang-mu/"
+           data-tag="Jenkins"
+           data-author="" >
+            <span class="post-title" title="Jenkins构建Vue项目">Jenkins构建Vue项目</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2021-06-17-springcolud/"
+           data-tag="SpringCloud"
+           data-author="" >
+            <span class="post-title" title="SpringCloud笔记">SpringCloud笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 学习路线 "
+           href="/2022/12/06/2021-06-16-xue-xi-lu-xian/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="学习路线">学习路线</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 seata分布式事务 "
+           href="/2022/12/06/2021-06-07-seata-fen-bu-shi-shi-wu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="seata分布式事务">seata分布式事务</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2021-06-03-redisson/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redisson">redisson</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2021-03-31-mysql-zheng-li/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="mysql问题整理">mysql问题整理</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 JVM "
+           href="/2022/12/06/2020-05-09-jvm/"
+           data-tag="JVM"
+           data-author="" >
+            <span class="post-title" title="JVM">JVM</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2020-05-01-java-suo-li-jie/"
+           data-tag="java锁"
+           data-author="" >
+            <span class="post-title" title="java锁">java锁</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2020-04-16-map-ji-he-shen-ru/"
+           data-tag="HashMap ConcurrentHashMap"
+           data-author="" >
+            <span class="post-title" title="Map集合深入">Map集合深入</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SSO "
+           href="/2022/12/06/2020-03-19-sso-cas/"
+           data-tag="CAS-SSO"
+           data-author="" >
+            <span class="post-title" title="CAS-SSO">CAS-SSO</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Docker "
+           href="/2022/12/06/2020-03-18-docker/"
+           data-tag="Docker笔记"
+           data-author="" >
+            <span class="post-title" title="Docker笔记">Docker笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2020-03-09-springboot-an-li/"
+           data-tag="SpringBoot"
+           data-author="" >
+            <span class="post-title" title="SpringBoot 入门案例">SpringBoot 入门案例</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2020-03-09-redis-shen-ru/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redis深入">redis深入</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Redis "
+           href="/2022/12/06/2020-03-09-redis-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="redis基础笔记">redis基础笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Logstash "
+           href="/2022/12/06/2019-12-26-logstash-ji-chu/"
+           data-tag="Logstash"
+           data-author="" >
+            <span class="post-title" title="Logstash基础">Logstash基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-12-17-mysql-da-quan/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="MySQL大全">MySQL大全</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Linux "
+           href="/2022/12/06/2019-12-17-linux-ming-ling/"
+           data-tag="Linux"
+           data-author="" >
+            <span class="post-title" title="Linux基础命令">Linux基础命令</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 前端 "
+           href="/2022/12/06/2019-12-04-vue-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Vue基础">Vue基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-09-10-spring-xi-lie-zhu-jie/"
+           data-tag="Spring系列注解"
+           data-author="" >
+            <span class="post-title" title="Spring系列注解">Spring系列注解</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-07-21-java-duo-xian-cheng-bi-ji/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java多线程基础">java多线程基础</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-06-16-xian-cheng-chi-dui-lie/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="线程池队列">线程池队列</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-06-16-mysql-suo-yin/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="MySQL 索引">MySQL 索引</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Maven "
+           href="/2022/12/06/2019-06-16-maven-bi-ji/"
+           data-tag="Maven"
+           data-author="" >
+            <span class="post-title" title="Maven笔记">Maven笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-06-16-kafka-pei-zhi-xin-xi/"
+           data-tag="kafka"
+           data-author="" >
+            <span class="post-title" title="kafka配置信息">kafka配置信息</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-06-16-kafka-xue-xi-bi-ji/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="kafka学习笔记">kafka学习笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 MQ "
+           href="/2022/12/06/2019-05-12-rabbitmq/"
+           data-tag="RabbitMQ"
+           data-author="" >
+            <span class="post-title" title="RabbitMQ笔记">RabbitMQ笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-04-18-springboot-bi-ji/"
+           data-tag="SpringBoot"
+           data-author="" >
+            <span class="post-title" title="SpringBoot笔记">SpringBoot笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 quartz "
+           href="/2022/12/06/2019-04-11-quartz/"
+           data-tag="quartz"
+           data-author="" >
+            <span class="post-title" title="quartz">quartz</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Git Hexo "
+           href="/2022/12/06/2019-04-11-idea-git-hexo-de-shi-yong-fly-tom/"
+           data-tag="Git Hexo"
+           data-author="" >
+            <span class="post-title" title="Git">Git</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Elasticsearch "
+           href="/2022/12/06/2019-04-11-elasticsearch/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Elasticsearch笔记">Elasticsearch笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Dubbo "
+           href="/2022/12/06/2019-04-11-dubbo/"
+           data-tag="Dubbo"
+           data-author="" >
+            <span class="post-title" title="Dubbo笔记">Dubbo笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 SQL "
+           href="/2022/12/06/2019-02-03-sql-ji-chu-zhi-shi/"
+           data-tag="SQL"
+           data-author="" >
+            <span class="post-title" title="SQL基础知识">SQL基础知识</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Spring系列 "
+           href="/2022/12/06/2019-02-03-spring-zhi-shi-dian/"
+           data-tag="Spring"
+           data-author="" >
+            <span class="post-title" title="Spring">Spring</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-02-03-java-she-ji-mo-shi/"
+           data-tag="Java"
+           data-author="" >
+            <span class="post-title" title="java设计模式">java设计模式</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Java "
+           href="/2022/12/06/2019-02-03-java-ji-chu/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="java基础笔记">java基础笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Mybatis "
+           href="/2022/12/06/2019-01-23-mybatis/"
+           data-tag="Mybatis"
+           data-author="" >
+            <span class="post-title" title="Mybatis笔记">Mybatis笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 Zookeeper "
+           href="/2022/12/06/2018-11-02-zookeeper-bi-ji/"
+           data-tag="Zookeeper笔记"
+           data-author="" >
+            <span class="post-title" title="Zookeeper笔记">Zookeeper笔记</span>
+            <span class="post-date" title="2022-12-06 20:08:50">2022/12/06</span>
+        </a>
+        
+        
+        <a  class="全部文章 "
+           href="/2018/12/17/2018-09-06-markdown-intro/"
+           data-tag="Markdown"
+           data-author="" >
+            <span class="post-title" title="一份简明的 Markdown 笔记与教程">一份简明的 Markdown 笔记与教程</span>
+            <span class="post-date" title="2018-12-17 00:00:00">2018/12/17</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏 快捷键 s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-2020-03-09-Redis基础" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">redis基础笔记</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Redis">Redis</a>
+            
+        </span>
+        
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2022-04-20 09:30:57'>2022-12-06 20:08</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:9.1k</span>
+        
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#redis基础"><span class="toc-text">redis基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、Redis简介"><span class="toc-text">1、Redis简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Redis-为何这么快"><span class="toc-text">Redis 为何这么快</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、支持的语言"><span class="toc-text">2、支持的语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、Redis的应用场景到底有哪些？？"><span class="toc-text">3、Redis的应用场景到底有哪些？？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、Redis安装"><span class="toc-text">4、Redis安装</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装的大概步骤如下："><span class="toc-text">安装的大概步骤如下：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、Redis数据类型"><span class="toc-text">5、Redis数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#string-字符串"><span class="toc-text">string(字符串)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#相关命令介绍"><span class="toc-text">相关命令介绍</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#hash-哈希"><span class="toc-text">hash(哈希)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#相关命令介绍-1"><span class="toc-text">相关命令介绍</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#list-列表"><span class="toc-text">list(列表)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#相关命令介绍-2"><span class="toc-text">相关命令介绍</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#应用场景"><span class="toc-text">应用场景</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#数据结构"><span class="toc-text">数据结构</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#实现方式"><span class="toc-text">实现方式</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#set-集合"><span class="toc-text">set(集合)</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#相关命令介绍-3"><span class="toc-text">相关命令介绍</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#应用场景-1"><span class="toc-text">应用场景</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#zset（sorted-set-有序集合）"><span class="toc-text">zset（sorted set 有序集合）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#相关命令介绍-4"><span class="toc-text">相关命令介绍</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#五种数据的区别"><span class="toc-text">五种数据的区别</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6、键值相关的命令"><span class="toc-text">6、键值相关的命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7、Redis服务相关的命令"><span class="toc-text">7、Redis服务相关的命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8、Redis的发布与订阅"><span class="toc-text">8、Redis的发布与订阅</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9、Redis事务"><span class="toc-text">9、Redis事务</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#一个事务经历三个阶段"><span class="toc-text">一个事务经历三个阶段</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Redis-事务缺陷的解决-–-Lua"><span class="toc-text">Redis 事务缺陷的解决 – Lua</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10、Redis安全配置"><span class="toc-text">10、Redis安全配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11、Redis持久化"><span class="toc-text">11、Redis持久化</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Snapshotting-快照-rdb"><span class="toc-text">Snapshotting(快照) rdb</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Append-only-file-AOF"><span class="toc-text">Append-only file(AOF)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12、Redis-性能测试"><span class="toc-text">12、Redis 性能测试</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#实际测试同时执行100万的请求"><span class="toc-text">实际测试同时执行100万的请求</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13、Redis的备份与恢复"><span class="toc-text">13、Redis的备份与恢复</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Redis自动备份有两种方式"><span class="toc-text">Redis自动备份有两种方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#dump-rdb备份"><span class="toc-text">dump.rdb备份</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#恢复举例"><span class="toc-text">恢复举例</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AOF自动备份"><span class="toc-text">AOF自动备份</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#AOF与dump备份不同"><span class="toc-text">AOF与dump备份不同</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注意：只要配置了aof，但是没有aof文件，这个时候启动的数据库会是空的"><span class="toc-text">注意：只要配置了aof，但是没有aof文件，这个时候启动的数据库会是空的</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#14、Redis-生产优化介绍"><span class="toc-text">14、Redis 生产优化介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、内存管理优化"><span class="toc-text">1、内存管理优化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、内存预分配"><span class="toc-text">2、内存预分配</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、持久化机制"><span class="toc-text">3、持久化机制</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#优化总结"><span class="toc-text">优化总结</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#15、Redis集群应用"><span class="toc-text">15、Redis集群应用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1、haproxy-keepalived-redis集群"><span class="toc-text">1、haproxy+keepalived+redis集群</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2、redis官方Sentinel集群管理工具"><span class="toc-text">2、redis官方Sentinel集群管理工具</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3、Redis-Cluster"><span class="toc-text">3、Redis Cluster</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#16、Pipeline（管道）机制"><span class="toc-text">16、Pipeline（管道）机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#17、pipeline-和原生批处理区别"><span class="toc-text">17、pipeline 和原生批处理区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#工作总结遇到的问题："><span class="toc-text">工作总结遇到的问题：</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="redis基础"><a href="#redis基础" class="headerlink" title="redis基础"></a>redis基础</h2><h3 id="1、Redis简介"><a href="#1、Redis简介" class="headerlink" title="1、Redis简介"></a>1、Redis简介</h3><hr>
+<p>REmote DIctionary Server(Redis) 是一个由Salvatore Sanfilippo写的key-value存储系统。Redis是一个开源的使用ANSI C语言编写、遵守BSD协议、支持网络、可基于内存亦可持久化的日志型、Key-Value数据库，并提供多种语言的API。它通常被称为数据结构服务器，因为值（value）可以是 字符串(String), 哈希(Map), 列表(list), 集合(sets) 和 有序集合(sorted sets)等类型。  </p>
+<p>Redis 是一个基于内存的高性能key-value数据库。<br>定期通过异步操作把数据库数据flush到硬盘上进行保存。因为是纯内存操作，Redis的性能非常出色，每秒可以处理超过 10万次读写操作，是已知性能最快的Key-Value DB。<br>Redis的出色之处不仅仅是性能，Redis是支持保存多种数据结构，此外单个value的最大限制是512MB。 Redis是单进程单线程的.</p>
+<p>大家都知道了redis是基于key-value的no sql数据库，因此，先来了解一下关于key相关的知识点</p>
+<blockquote>
+<p>1、任何二进制的序列都可以作为key使用<br>2、Redis有统一的规则来设计key  </p>
+<p>3、对key-value允许的最大长度是512MB</p>
+</blockquote>
+<h4 id="Redis-为何这么快"><a href="#Redis-为何这么快" class="headerlink" title="Redis 为何这么快"></a>Redis 为何这么快</h4><p><strong>面试官：</strong>Redis 作为缓存大家都在用，那 Redis 一定很快咯？</p>
+<p><strong>我：</strong>当然了，官方提供的数据可以达到 100000+ 的 QPS（每秒内的查询次数），这个数据不比 Memcached 差！</p>
+<p><strong>面试官：</strong>Redis 这么快，它的“多线程模型”你了解吗？（露出邪魅一笑）</p>
+<p><strong>我：</strong>您是想问 Redis 这么快，为什么还是单线程的吧。Redis 确实是单进程单线程的模型，因为 Redis 完全是基于内存的操作，CPU 不是 Redis 的瓶颈，Redis 的瓶颈最有可能是机器内存的大小或者网络带宽。</p>
+<p>既然单线程容易实现，而且 CPU 不会成为瓶颈，那就顺理成章的采用单线程的方案了（毕竟采用多线程会有很多麻烦）。</p>
+<p><strong>面试官：</strong>嗯，是的。那你能说说 Redis 是单线程的，为什么还能这么快吗？</p>
+<p><strong>我：</strong>可以这么说吧，总结一下有如下四点：</p>
+<ul>
+<li>Redis 完全基于内存，绝大部分请求是纯粹的内存操作，非常迅速，数据存在内存中，类似于 HashMap，HashMap 的优势就是查找和操作的时间复杂度是 O(1)。</li>
+<li>数据结构简单，对数据操作也简单。</li>
+<li>采用单线程，避免了不必要的上下文切换和竞争条件，不存在多线程导致的 CPU 切换，不用去考虑各种锁的问题，不存在加锁释放锁操作，没有死锁问题导致的性能消耗。</li>
+<li>使用多路复用 IO 模型，非阻塞 IO。</li>
+</ul>
+<blockquote>
+<p>redis-cli –raw 设置可以显示中文，不会乱码</p>
+</blockquote>
+<h3 id="2、支持的语言"><a href="#2、支持的语言" class="headerlink" title="2、支持的语言"></a>2、支持的语言</h3><hr>
+<pre class=" language-shell"><code class="language-shell">    ActionScript   Bash   C   C#   C++   Clojure   Common Lisp  
+    Crystal  D  Dart Elixir   emacs lisp   Erlang    Fancy  
+    gawk  GNU Prolog  Go  Haskell  Haxe  Io Java  Javascript  
+    Julia  Lua  Matlab  mruby  Nim  Node.js  Objective-C  
+    OCaml Pascal  Perl  PHP  Pure Data  Python  R  Racket  
+    Rebol  Ruby  Rust Scala  Scheme  Smalltalk  Swift  Tcl  VB  VCL*</code></pre>
+<h3 id="3、Redis的应用场景到底有哪些？？"><a href="#3、Redis的应用场景到底有哪些？？" class="headerlink" title="3、Redis的应用场景到底有哪些？？"></a>3、Redis的应用场景到底有哪些？？</h3><hr>
+<blockquote>
+<p>1、最常用的就是会话缓存<br>2、消息队列，比如支付<br>3、活动排行榜或计数<br>4、发布、订阅消息(消息通知)<br>5、商品列表、评论列表等</p>
+</blockquote>
+<p>Redis在互联网公司一般有以下应用:</p>
+<ul>
+<li>String：缓存、限流、计数器、分布式锁、分布式Session</li>
+<li>Hash：存储用户信息、用户主页访问量、组合查询</li>
+<li>List：微博关注人时间轴列表、简单队列</li>
+<li>Set：赞、踩、标签、好友关系</li>
+<li>Zset：排行榜</li>
+</ul>
+<h3 id="4、Redis安装"><a href="#4、Redis安装" class="headerlink" title="4、Redis安装"></a>4、Redis安装</h3><hr>
+<h4 id="安装的大概步骤如下："><a href="#安装的大概步骤如下：" class="headerlink" title="安装的大概步骤如下："></a>安装的大概步骤如下：</h4><p>Redis是c语言开发的，安装redis需要c语言的编译环境<br>如果没有gcc需要在线安装：yum install gcc-c++</p>
+<blockquote>
+<p>第一步：获取源码包：wget <a href="http://download.redis.io/releases/redis-3.0.0.tar.gz" target="_blank" rel="noopener">http://download.redis.io/releases/redis-3.0.0.tar.gz</a><br>第二步：解压缩redis：tar zxvf redis-3.0.0.tar.gz<br>第三步：编译。进入redis源码目录(cd redis-3.0.0)。执行 make<br>第四步：安装。make install PREFIX=/usr/local/redis<br>#PREFIX参数指定redis的安装目录</p>
+</blockquote>
+<h3 id="5、Redis数据类型"><a href="#5、Redis数据类型" class="headerlink" title="5、Redis数据类型"></a>5、Redis数据类型</h3><hr>
+<p>Redis一共支持五种数据类型</p>
+<blockquote>
+<p>1、string(字符串)<br>2、hash(哈希)<br>3、list(列表)<br>4、set(集合)<br>5、zset（sorted set 有序集合）</p>
+</blockquote>
+<p>redis 命令参考</p>
+<p><a href="http://redisdoc.com/" target="_blank" rel="noopener">http://redisdoc.com/</a></p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/redis.png" alt=""></p>
+<h4 id="string-字符串"><a href="#string-字符串" class="headerlink" title="string(字符串)"></a>string(字符串)</h4><p>它是redis最基本的数据类型，一个key对应一个value，需要注意是一个键值最大存储512MB。</p>
+<pre class=" language-shell"><code class="language-shell">    128.127.0.0.1:6379> set key "hello world"
+    OK
+    127.0.0.1:6379> get key
+    "hello world"
+    127.0.0.1:6379> getset key "nihao"
+    "hello world"
+    127.0.0.1:6379> mset key1 "hi" key2 "nihao" key3 "hello"
+    OK
+    127.0.0.1:6379> get key1
+    "hi"
+    127.0.0.1:6379> get key2
+    "nihao"
+    127.0.0.1:6379> get key3
+    "hello"</code></pre>
+<h5 id="相关命令介绍"><a href="#相关命令介绍" class="headerlink" title="相关命令介绍"></a>相关命令介绍</h5><blockquote>
+<p>set 为一个Key设置value（值）<br>get 获得某个key对应的value（值）<br>getset 为一个Key设置value（值）并返回对应的值<br>mset 为多个key设置value（值）</p>
+</blockquote>
+<h4 id="hash-哈希"><a href="#hash-哈希" class="headerlink" title="hash(哈希)"></a>hash(哈希)</h4><p>redis hash是一个键值对的集合， 是一个string类型的field和value的映射表，适合用于存储对象</p>
+<pre class=" language-shell"><code class="language-shell">    128.127.0.0.1:6379> hset redishash 1 "001"
+    (integer) 1
+    127.0.0.1:6379> hget redishash 1
+    "001"
+    127.0.0.1:6379> hmset redishash 1 "001" 2 "002"
+    OK
+    127.0.0.1:6379> hget redishash 1
+    "001"
+    127.0.0.1:6379> hget redishash 2
+    "002"
+    127.0.0.1:6379> hmget redishash 1 2
+    1) "001"
+    2) "002"</code></pre>
+<h5 id="相关命令介绍-1"><a href="#相关命令介绍-1" class="headerlink" title="相关命令介绍"></a>相关命令介绍</h5><blockquote>
+<p>hset 将Key对应的hash中的field配置为value，如果hash不存则自动创建，<br>hget 获得某个hash中的field配置的值<br>hmset 批量配置同一个hash中的多个field值<br>hmget 批量获得同一个hash中的多个field值</p>
+</blockquote>
+<h4 id="list-列表"><a href="#list-列表" class="headerlink" title="list(列表)"></a>list(列表)</h4><p>是redis简单的字符串列表，它按插入顺序排序</p>
+<pre class=" language-shell"><code class="language-shell">    128.127.0.0.1:6379> lpush word  hi
+    (integer) 1
+    127.0.0.1:6379> lpush word  hello
+    (integer) 2
+    127.0.0.1:6379> rpush word  world
+    (integer) 3
+    127.0.0.1:6379> lrange word 0 2
+    1) "hello"
+    2) "hi"
+    3) "world"
+    127.0.0.1:6379> llen word
+    (integer) 3</code></pre>
+<h5 id="相关命令介绍-2"><a href="#相关命令介绍-2" class="headerlink" title="相关命令介绍"></a>相关命令介绍</h5><blockquote>
+<p>lpush 向指定的列表左侧插入元素，返回插入后列表的长度<br>rpush 向指定的列表右侧插入元素，返回插入后列表的长度<br>llen 返回指定列表的长度<br>lrange 返回指定列表中指定范围的元素值</p>
+</blockquote>
+<h5 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h5><p>List 应用场景非常多，也是 Redis 最重要的数据结构之一，比如 Twitter 的关注列表，粉丝列表都可以用 List 结构来实现。</p>
+<h5 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h5><p>List 就是链表，可以用来当消息队列用。Redis 提供了 List 的 Push 和 Pop 操作，还提供了操作某一段的 API，可以直接查询或者删除某一段的元素。</p>
+<h5 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h5><p>Redis List 的是实现是一个双向链表，既可以支持反向查找和遍历，更方便操作，不过带来了额外的内存开销</p>
+<h4 id="set-集合"><a href="#set-集合" class="headerlink" title="set(集合)"></a>set(集合)</h4><p>是string类型的无序集合，也不可重复</p>
+<pre class=" language-shell"><code class="language-shell">    128.127.0.0.1:6379> sadd redis redisset
+    (integer) 1
+    127.0.0.1:6379> sadd redis redisset1
+    (integer) 1
+    127.0.0.1:6379> sadd redis redisset2
+    (integer) 1
+    127.0.0.1:6379> smembers redis
+    1) "redisset1"
+    2) "redisset"
+    3) "redisset2"
+    127.0.0.1:6379> sadd redis redisset2
+    (integer) 0
+    127.0.0.1:6379> smembers redis
+    1) "redisset1"
+    2) "redisset"
+    3) "redisset2"
+    127.0.0.1:6379> smembers redis
+    1) "redisset1"
+    2) "redisset3"
+    3) "redisset"
+    4) "redisset2"
+    127.0.0.1:6379> srem redis redisset
+    (integer) 1
+    127.0.0.1:6379> smembers redis
+    1) "redisset1"
+    2) "redisset3"
+    3) "redisset2"</code></pre>
+<h5 id="相关命令介绍-3"><a href="#相关命令介绍-3" class="headerlink" title="相关命令介绍"></a>相关命令介绍</h5><blockquote>
+<p>sadd 添加一个string元素到key对应的set集合中，成功返回1，如果元素存在返回0<br>smembers 返回指定的集合中所有的元素<br>srem 删除指定集合的某个元素</p>
+</blockquote>
+<h5 id="应用场景-1"><a href="#应用场景-1" class="headerlink" title="应用场景"></a>应用场景</h5><p>Redis Set 对外提供的功能和 List 一样是一个列表，特殊之处在于 Set 是自动去重的，而且 Set 提供了判断某个成员是否在一个 Set 集合中。</p>
+<h4 id="zset（sorted-set-有序集合）"><a href="#zset（sorted-set-有序集合）" class="headerlink" title="zset（sorted set 有序集合）"></a>zset（sorted set 有序集合）</h4><p>是string类型的有序集合，也不可重复<br>sorted set中的每个元素都需要指定一个分数，根据分数对元素进行升序排序<br>如果多个元素有相同的分数，则以字典序进行升序排序<br>sorted set 因此非常适合实现排名</p>
+<pre class=" language-shell"><code class="language-shell">    128.127.0.0.1:6379> zadd nosql 0 001
+    (integer) 1
+    127.0.0.1:6379> zadd nosql 0 002
+    (integer) 1
+    127.0.0.1:6379> zadd nosql 0 003
+    (integer) 1
+    127.0.0.1:6379> zcount nosql 0 0 
+    (integer) 3
+    127.0.0.1:6379> zcount nosql 0 3
+    (integer) 3
+    127.0.0.1:6379> zrem nosql 002
+    (integer) 1
+    127.0.0.1:6379> zcount nosql 0 3
+    (integer) 2
+    127.0.0.1:6379> zscore nosql 003
+    "0"
+    127.0.0.1:6379> zrangebyscore nosql 0 10
+    1) "001"
+    2) "003"
+    127.0.0.1:6379> zadd nosql 1 003
+    (integer) 0
+    127.0.0.1:6379> zadd nosql 1 004
+    (integer) 1
+    127.0.0.1:6379> zrangebyscore nosql 0 10
+    1) "001"
+    2) "003"
+    3) "004"
+    127.0.0.1:6379> zadd nosql 3 005
+    (integer) 1
+    127.0.0.1:6379> zadd nosql 2 006
+    (integer) 1
+    127.0.0.1:6379> zrangebyscore nosql 0 10
+    1) "001"
+    2) "003"
+    3) "004"
+    4) "006"
+    5) "005"</code></pre>
+<h5 id="相关命令介绍-4"><a href="#相关命令介绍-4" class="headerlink" title="相关命令介绍"></a>相关命令介绍</h5><blockquote>
+<p>zadd 向指定的sorteset中添加1个或多个元素<br>zrem 从指定的sorteset中删除1个或多个元素<br>zcount 查看指定的sorteset中指定分数范围内的元素数量<br>zscore 查看指定的sorteset中指定分数的元素<br>zrangebyscore 查看指定的sorteset中指定分数范围内的所有元素</p>
+</blockquote>
+<p>使用场景：Sorted Set 可以通过用户额外提供一个优先级（score）的参数来为成员排序，并且是插入有序的，即自动排序。</p>
+<p>当你需要一个有序的并且不重复的集合列表，那么可以选择 Sorted Set 结构。</p>
+<p>和 Set 相比，Sorted Set关联了一个 Double 类型权重的参数 Score，使得集合中的元素能够按照 Score 进行有序排列，Redis 正是通过分数来为集合中的成员进行从小到大的排序。</p>
+<p>实现方式：Redis Sorted Set 的内部使用 HashMap 和跳跃表（skipList）来保证数据的存储和有序，HashMap 里放的是成员到 Score 的映射。</p>
+<p>而跳跃表里存放的是所有的成员，排序依据是 HashMap 里存的 Score，使用跳跃表的结构可以获得比较高的查找效率，并且在实现上比较简单。</p>
+<h4 id="五种数据的区别"><a href="#五种数据的区别" class="headerlink" title="五种数据的区别"></a>五种数据的区别</h4><p><img src="https://gitee.com/fly_tom/use/raw/master/redis11.png" alt=""></p>
+<h3 id="6、键值相关的命令"><a href="#6、键值相关的命令" class="headerlink" title="6、键值相关的命令"></a>6、键值相关的命令</h3><hr>
+<pre class=" language-shell"><code class="language-shell">    128.127.0.0.1:6379> exists key
+    (integer) 1
+    127.0.0.1:6379> exists key1
+    (integer) 1
+    127.0.0.1:6379> exists key100
+    (integer) 0
+    127.0.0.1:6379> get key
+    "nihao,hello"
+    127.0.0.1:6379> get key1
+    "hi"
+    127.0.0.1:6379> del key1
+    (integer) 1
+    127.0.0.1:6379> get key1
+    (nil)
+    127.0.0.1:6379> rename key key0
+    OK
+    127.0.0.1:6379> get key
+    (nil)
+    127.0.0.1:6379> get key0
+    "nihao,hello"
+    127.0.0.1:6379> type key0
+    string</code></pre>
+<blockquote>
+<p>exists 确认key是否存在<br>del 删除key<br>expire 设置Key过期时间(单位秒)<br>persist 移除Key过期时间的配置<br>rename 重命名key<br>type 返回值的类型</p>
+</blockquote>
+<h3 id="7、Redis服务相关的命令"><a href="#7、Redis服务相关的命令" class="headerlink" title="7、Redis服务相关的命令"></a>7、Redis服务相关的命令</h3><hr>
+<pre class=" language-shell"><code class="language-shell">    128.127.0.0.1:6379> select 0
+    OK
+    127.0.0.1:6379> info
+    # Server
+    redis_version:3.0.6
+    redis_git_sha1:00000000
+    redis_git_dirty:0
+    redis_build_id:347e3eeef5029f3
+    redis_mode:standalone
+    os:Linux 3.10.0-693.el7.x86_64 x86_64
+    arch_bits:64
+    multiplexing_api:epoll
+    gcc_version:4.8.5
+    process_id:31197
+    run_id:8b6ec6ad5035f5df0b94454e199511084ac6fb12
+    tcp_port:6379
+    uptime_in_seconds:8514
+    uptime_in_days:0
+    hz:10
+    lru_clock:14015928
+    config_file:/usr/local/redis/redis.conf
+    -------------------省略N行
+    127.0.0.1:6379> CONFIG GET 0
+    (empty list or set)
+    127.0.0.1:6379> CONFIG GET 15
+    (empty list or set)</code></pre>
+<blockquote>
+<p>slect 选择数据库(数据库编号0-15)<br>quit 退出连接<br>info 获得服务的信息与统计<br>monitor 实时监控<br>config get 获得服务配置<br>flushdb 删除当前选择的数据库中的key<br>flushall 删除所有数据库中的key</p>
+</blockquote>
+<h3 id="8、Redis的发布与订阅"><a href="#8、Redis的发布与订阅" class="headerlink" title="8、Redis的发布与订阅"></a>8、Redis的发布与订阅</h3><hr>
+<p>Redis发布与订阅(pub/sub)是它的一种消息通信模式，一方发送信息，一方接收信息。<br>下图是三个客户端同时订阅同一个频道<br><img src="https://gitee.com/fly_tom/use/raw/master/redis6.png" alt=""><br>下图是有新信息发送给频道1时，就会将消息发送给订阅它的三个客户端<br><img src="https://gitee.com/fly_tom/use/raw/master/redis7.png" alt=""></p>
+<h3 id="9、Redis事务"><a href="#9、Redis事务" class="headerlink" title="9、Redis事务"></a>9、Redis事务</h3><hr>
+<p>Redis事务可以一次执行多条命令，发送exec命令前放入队列缓存，结束事务，收到exec命令后执行事务操作，如果某一命令执行失败，其它命令仍可继续执行，一个事务执行的过程中，其它客户端提交的请求不会被插入到事务执行的命令列表中。</p>
+<p>很多情况下我们需要一次执行不止一个命令，而且需要其同时成功或者失败。为了保证多条命令组合的原子性，Redis 提供了简单的事务功能以及集成 Lua 脚本来解决这个问题。</p>
+<p>Redis 提供了简单的事务功能，将一组需要一起执行的命令放到 multi 和 exec 两个命令之间。Multi 命令代表事务开始，exec 命令代表事务结束，它们之间的命令是原子顺序执行的</p>
+<h4 id="一个事务经历三个阶段"><a href="#一个事务经历三个阶段" class="headerlink" title="一个事务经历三个阶段"></a>一个事务经历三个阶段</h4><blockquote>
+<p>开始事务(命令:multi)<br>命令执行<br>结束事务(命令:exec)</p>
+<p> 128.127.0.0.1:6379&gt; MULTI<br> OK<br> 127.0.0.1:6379&gt; set key key1<br> QUEUED<br> 127.0.0.1:6379&gt; get key<br> QUEUED<br> 127.0.0.1:6379&gt; rename key key001<br> QUEUED<br> 127.0.0.1:6379&gt; exec</p>
+<p> 1) OK<br> 2) “key1”<br> 3) OK</p>
+</blockquote>
+<p>Redis 提供了简单的事务，之所以说它简单，主要是因为它不支持事务中的回滚特性，同时无法实现命令之间的逻辑关系计算，主要有以下几点：</p>
+<ol>
+<li><p><strong>不够满足原子性</strong>。一个事务执行过程中，其他事务或 client 是可以对相应的 key 进行修改的（并发情况下，例如电商常见的超卖问题），想要避免这样的并发性问题就需要使用 WATCH 命令，但是通常来说，必须经过仔细考虑才能决定究竟需要对哪些 key 进行 WATCH 加锁。然而，额外的 WATCH 会增加事务失败的可能，而缺少必要的 WATCH 又会让我们的程序产生竞争条件。</p>
+<ol>
+<li>WATCH：监控一个或多个key值</li>
+<li>UNWATCH：取消对所有key值的监控</li>
+</ol>
+<blockquote>
+<p> 为了弥补Redis单线程事务在开启后执行前可被“队头插队”的问题，Redis提供了Watch指令，它可以在事务开启前指定多个key，在事务执行前会校验key值是否发生改变，如果在unwatch之前变化过，则事务也不会执行，可以利用WATCH实现简单的CAS操作，假定key值不会被其他应用修改，一旦修改便回退选择放弃或者重新执行</p>
+</blockquote>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/redis18.png" alt=""></p>
+</li>
+<li><p><strong>后执行的命令无法依赖先执行命令的结果</strong>。由于事务中的所有命令都是互相独立的，在遇到 exec 命令之前并没有真正的执行，所以我们无法在事务中的命令中使用前面命令的查询结果。我们唯一可以做的就是通过 watch 保证在我们进行修改时，如果其它事务刚好进行了修改，则我们的修改停止，然后应用层做相应的处理。</p>
+</li>
+<li><p><strong>事务中的每条命令都会与 Redis 服务器进行网络交互</strong>。Redis 事务开启之后，每执行一个操作返回的都是 queued，这里就涉及到客户端与服务器端的多次交互，明明是需要一次批量执行的 n 条命令，还需要通过多次网络交互，显然非常浪费（这个就是为什么会有 pipeline 的原因，减少 RTT 的时间）。</p>
+</li>
+<li><p>在执行是语法错误的命令，如 incr abc，本来应该是数值的，但是执行字符串，redis客户端在执行时并不会检测，除非是直接执行 incr，redis会提示语法错误并且回滚，但incr abc不会检测，并且加入到了执行的队列中，其他先执行的命令就不会回滚</p>
+<pre class=" language-shell"><code class="language-shell">127.0.0.1:6379> multi
+OK
+127.0.0.1:6379(TX)> set b bbbbbbbbbb
+QUEUED
+127.0.0.1:6379(TX)> incr abb
+QUEUED
+127.0.0.1:6379(TX)> exec
+1) OK
+2) (integer) 1
+127.0.0.1:6379> get b
+"bbbbbbbbbb"
+127.0.0.1:6379></code></pre>
+</li>
+</ol>
+<h4 id="Redis-事务缺陷的解决-–-Lua"><a href="#Redis-事务缺陷的解决-–-Lua" class="headerlink" title="Redis 事务缺陷的解决 – Lua"></a>Redis 事务缺陷的解决 – Lua</h4><p>Lua 是一个小巧的脚本语言，用标准 C 编写，几乎在所有操作系统和平台上都可以编译运行。一个完整的 Lua 解释器不过 200k，在目前所有脚本引擎中，Lua 的速度是最快的，这一切都决定了 Lua 是作为嵌入式脚本的最佳选择。</p>
+<p>Redis 2.6 版本之后内嵌了一个 Lua 解释器，可以用于一些简单的事务与逻辑运算，也可帮助开发者定制自己的 Redis 命令（例如：一次性的执行复杂的操作，和带有逻辑判断的操作），在这之前，必须修改源码。</p>
+<p>在 Redis 中执行 Lua 脚本有两种方法：eval 和 evalsha，这里以 eval 做为案例介绍：</p>
+<p>eval 语法：</p>
+<pre class=" language-shell"><code class="language-shell">eval script numkeys key [key ...] arg [arg ...]</code></pre>
+<p>其中：</p>
+<ul>
+<li>script 一段 Lua 脚本或 Lua 脚本文件所在路径及文件名</li>
+<li>numkeys Lua 脚本对应参数数量</li>
+<li>key [key …] Lua 中通过全局变量 KEYS 数组存储的传入参数</li>
+<li>arg [arg …] Lua 中通过全局变量 ARGV 数组存储的传入附加参数</li>
+</ul>
+<pre class=" language-shell"><code class="language-shell">EVAL "return {KEYS[1],KEYS[2],ARGV[1],ARGV[2]}" 2 key1 key2 first second
+1) "key1"
+2) "key2"
+3) "first"
+4) "second"</code></pre>
+<p>Lua 执行流程图:</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/redis17.png" alt=""></p>
+<p><strong>SCRIPT LOAD 与 EVALSHA 命令</strong></p>
+<p>对于不立即执行的 Lua 脚本，或需要重用的 Lua 脚本，可以通过 SCRIPT LOAD 提前载入 Lua 脚本，这个命令会立即返回对应的 SHA1 校验码</p>
+<p>当需要执行函数时，通过 EVALSHA 调用 SCRIPT LOAD 返回的 SHA1 即可</p>
+<pre class=" language-shell"><code class="language-shell">SCRIPT LOAD "return {KEYS[1],KEYS[2],ARGV[1],ARGV[2]}"
+"232fd51614574cf0867b83d384a5e898cfd24e5a"
+
+EVALSHA "232fd51614574cf0867b83d384a5e898cfd24e5a" 2 key1 key2 first second
+1) "key1"
+2) "key2"
+3) "first"
+4) "second"</code></pre>
+<p><strong>通过 Lua 脚本执行 Redis 命令</strong></p>
+<p>在 Lua 脚本中，只要使用 <code>redis.call()</code> 或 <code>redis.pcall()</code> 传入 Redis 命令就可以直接执行：</p>
+<pre class=" language-shell"><code class="language-shell">eval "return redis.call('set',KEYS[1],'bar')" 1 foo     --等同于在服务端执行 set foo bar</code></pre>
+<p>案例，使用 Lua 脚本实现访问频率限制：</p>
+<pre class=" language-shell"><code class="language-shell">--
+-- KEYS[1] 要限制的ip
+-- ARGV[1] 限制的访问次数
+-- ARGV[2] 限制的时间
+--
+
+local key = "rate.limit:" .. KEYS[1]
+local limit = tonumber(ARGV[1])
+local expire_time = ARGV[2]
+
+local is_exists = redis.call("EXISTS", key)
+if is_exists == 1then
+    if redis.call("INCR", key) > limit then
+        return0
+    else
+        return1
+    end
+else
+    redis.call("SET", key, 1)
+    redis.call("EXPIRE", key, expire_time)
+    return1
+end</code></pre>
+<p>使用方法，通过：</p>
+<pre class=" language-shell"><code class="language-shell">eval(file_get_contents(storage_path("limit.lua")), 3, "127.0.0.1", "3", "100");</code></pre>
+<h3 id="10、Redis安全配置"><a href="#10、Redis安全配置" class="headerlink" title="10、Redis安全配置"></a>10、Redis安全配置</h3><hr>
+<p>可以通过修改配置文件设备密码参数来提高安全性</p>
+<pre class=" language-shell"><code class="language-shell"># requirepass foobared  
+去掉注释#号就可以配置密码
+没有配置密码的情况下查询如下
+127.0.0.1:6379> CONFIG GET requirepass
+1) "requirepass"
+2) ""
+配置密码之后，就需要进行认证
+127.0.0.1:6379> CONFIG GET requirepass
+(error) NOAUTH Authentication required.
+127.0.0.1:6379> AUTH foobared #认证
+OK
+127.0.0.1:6379> CONFIG GET requirepass
+1) "requirepass"
+2) "foobared"</code></pre>
+<h3 id="11、Redis持久化"><a href="#11、Redis持久化" class="headerlink" title="11、Redis持久化"></a>11、Redis持久化</h3><hr>
+<p>Redis持久有两种方式:Snapshotting(快照),Append-only file(AOF)</p>
+<h4 id="Snapshotting-快照-rdb"><a href="#Snapshotting-快照-rdb" class="headerlink" title="Snapshotting(快照) rdb"></a>Snapshotting(快照) rdb</h4><blockquote>
+<p>1、将存储在内存的数据以快照的方式写入二进制文件中，如默认dump.rdb中<br>2、save 900 1 #900秒内如果超过1个Key被修改，则启动快照保存<br>3、save 300 10 #300秒内如果超过10个Key被修改，则启动快照保存<br>4、save 60 10000 #60秒内如果超过10000个Key被修改，则启动快照保存</p>
+</blockquote>
+<h4 id="Append-only-file-AOF"><a href="#Append-only-file-AOF" class="headerlink" title="Append-only file(AOF)"></a>Append-only file(AOF)</h4><blockquote>
+<p>1、使用AOF持久时，服务会将每个收到的写命令通过write函数追加到文件中（appendonly.aof）<br>2、AOF持久化存储方式参数说明<br>appendonly yes #开启AOF持久化存储方式<br>appendfsync always #收到写命令后就立即写入磁盘，效率最差，效果最好<br>appendfsync everysec #每秒写入磁盘一次，效率与效果居中<br>appendfsync no #完全依赖OS，效率最佳，效果没法保证</p>
+</blockquote>
+<h3 id="12、Redis-性能测试"><a href="#12、Redis-性能测试" class="headerlink" title="12、Redis 性能测试"></a>12、Redis 性能测试</h3><hr>
+<p>自带相关测试工具</p>
+<pre class=" language-shell"><code class="language-shell">[root@test ~]# redis-benchmark --help
+Usage: redis-benchmark [-h <host>] [-p <port>] [-c <clients>] [-n <requests]> [-k <boolean>]
+
+-h <hostname>      Server hostname (default 127.0.0.1)
+-p <port>          Server port (default 6379)
+-s <socket>        Server socket (overrides host and port)
+-a <password>      Password for Redis Auth
+-c <clients>       Number of parallel connections (default 50)
+-n <requests>      Total number of requests (default 100000)
+-d <size>          Data size of SET/GET value in bytes (default 2)
+-dbnum <db>        SELECT the specified db number (default 0)
+-k <boolean>       1=keep alive 0=reconnect (default 1)
+-r <keyspacelen>   Use random keys for SET/GET/INCR, random values for SADD
+Using this option the benchmark will expand the string __rand_int__
+inside an argument with a 12 digits number in the specified range
+from 0 to keyspacelen-1. The substitution changes every time a command
+is executed. Default tests use this to hit random keys in the
+specified range.
+-P <numreq>        Pipeline <numreq> requests. Default 1 (no pipeline).
+-q                 Quiet. Just show query/sec values
+--csv              Output in CSV format
+-l                 Loop. Run the tests forever
+-t <tests>         Only run the comma separated list of tests. The test
+names are the same as the ones produced as output.
+-I                 Idle mode. Just open N idle connections and wait.
+
+Examples:
+
+Run the benchmark with the default configuration against 127.0.0.1:6379:
+$ redis-benchmark
+
+Use 20 parallel clients, for a total of 100k requests, against 192.168.1.1:
+$ redis-benchmark -h 192.168.1.1 -p 6379 -n 100000 -c 20
+
+Fill 127.0.0.1:6379 with about 1 million keys only using the SET test:
+$ redis-benchmark -t set -n 1000000 -r 100000000
+
+Benchmark 127.0.0.1:6379 for a few commands producing CSV output:
+$ redis-benchmark -t ping,set,get -n 100000 --csv
+
+Benchmark a specific command line:
+$ redis-benchmark -r 10000 -n 10000 eval 'return redis.call("ping")' 0
+
+Fill a list with 10000 random elements:
+$ redis-benchmark -r 10000 -n 10000 lpush mylist __rand_int__
+
+On user specified command lines __rand_int__ is replaced with a random integer
+with a range of values selected by the -r option.</code></pre>
+<h4 id="实际测试同时执行100万的请求"><a href="#实际测试同时执行100万的请求" class="headerlink" title="实际测试同时执行100万的请求"></a>实际测试同时执行100万的请求</h4><pre class=" language-shell"><code class="language-shell">[root@test ~]# redis-benchmark -n 1000000 -q
+PING_INLINE: 152578.58 requests per second
+PING_BULK: 150308.14 requests per second
+SET: 143266.47 requests per second
+GET: 148632.58 requests per second
+INCR: 145857.64 requests per second
+LPUSH: 143781.45 requests per second
+LPOP: 147819.66 requests per second
+SADD: 138350.86 requests per second
+SPOP: 134282.27 requests per second
+LPUSH (needed to benchmark LRANGE): 141302.81 requests per second
+LRANGE_100 (first 100 elements): 146756.67 requests per second
+LRANGE_300 (first 300 elements): 148104.27 requests per second
+LRANGE_500 (first 450 elements): 152671.75 requests per second
+LRANGE_600 (first 600 elements): 148104.27 requests per second
+MSET (10 keys): 132731.62 requests per second</code></pre>
+<h3 id="13、Redis的备份与恢复"><a href="#13、Redis的备份与恢复" class="headerlink" title="13、Redis的备份与恢复"></a>13、Redis的备份与恢复</h3><hr>
+<h4 id="Redis自动备份有两种方式"><a href="#Redis自动备份有两种方式" class="headerlink" title="Redis自动备份有两种方式"></a>Redis自动备份有两种方式</h4><blockquote>
+<p>第一种是通过dump.rdb文件实现备份<br>第二种使用aof文件实现自动备份</p>
+</blockquote>
+<h4 id="dump-rdb备份"><a href="#dump-rdb备份" class="headerlink" title="dump.rdb备份"></a>dump.rdb备份</h4><p>Redis服务默认的自动文件备份方式(AOF没有开启的情况下)，在服务启动时，就会自动从dump.rdb文件中去加载数据。</p>
+<pre class=" language-shell"><code class="language-shell">具体配置在redis.conf
+save 900 1 
+save 300 10 
+save 60 10000</code></pre>
+<p>RDB有两种方式，save和bgsave</p>
+<p>save，会阻塞服务器的其他操作，直到save执行完成，所以，这个期间的所有命令请求都会被拒绝。对客户端影响较大。</p>
+<p>BGSave，由子进程进行数据保存，期间redis仍然可以继续处理客户端请求。为了防止竞争和冲突，bgsave被设计成和save/bgrewriteaof操作互斥。</p>
+<p>Redis服务器默认每100毫秒执行一次，如果数据库修改次数(dirty计数器)大于设置的阈值，并且距离上次执行保存的时间(lastsave属性)大于设置的阈值，则执行保存操作。</p>
+<p>因为是统一批量的保存操作，rdb文件有二进制存储、结构紧凑、空间消耗少、恢复速度快等特点，在持久化方案上不可或缺。</p>
+<p>也可以手工执行save命令实现手动备份</p>
+<pre class=" language-shell"><code class="language-shell">128.127.0.0.1:6379> set name key
+OK
+127.0.0.1:6379> SAVE
+OK
+127.0.0.1:6379> set name key1
+OK
+127.0.0.1:6379> BGSAVE
+Background saving started
+redis快照到dump文件时，会自动生成dump.rdb的文件
+# The filename where to dump the DB
+dbfilename dump.rdb
+-rw-r--r-- 1 root root   253 Apr 17 20:17 dump.rdb</code></pre>
+<blockquote>
+<p>SAVE命令表示使用主进程将当前数据库快照到dump文件<br>BGSAVE命令表示，主进程会fork一个子进程来进行快照备份<br>两种备份不同之处，前者会阻塞主进程，后者不会。</p>
+</blockquote>
+<h4 id="恢复举例"><a href="#恢复举例" class="headerlink" title="恢复举例"></a>恢复举例</h4><pre class=" language-shell"><code class="language-shell"># Note that you must specify a directory here, not a file name.
+dir /usr/local/redisdata/
+备份文件存储路径
+127.0.0.1:6379> CONFIG GET dir
+1) "dir"
+2) "/usr/local/redisdata"
+127.0.0.1:6379> set key 001
+OK
+127.0.0.1:6379> set key1 002
+OK
+127.0.0.1:6379> set key2 003
+OK
+127.0.0.1:6379> save
+OK</code></pre>
+<p>将备份文件备份到其它目录</p>
+<pre class=" language-shell"><code class="language-shell">[root@test ~]# ll /usr/local/redisdata/
+total 4
+-rw-r--r-- 1 root root 49 Apr 17 21:24 dump.rdb
+[root@test ~]# date
+Tue Apr 17 21:25:38 CST 2018
+[root@test ~]# cp ./dump.rdb /tmp/</code></pre>
+<p>删除数据</p>
+<pre class=" language-shell"><code class="language-shell">128.127.0.0.1:6379> del key1
+(integer) 1
+127.0.0.1:6379> get key1
+(nil)
+
+关闭服务，将原备份文件拷贝回save备份目录
+
+[root@test ~]# redis-cli -a foobared shutdown
+[root@test ~]# lsof -i :6379
+[root@test ~]# cp /tmp/dump.rdb /usr/local/redisdata/
+cp: overwrite ‘/usr/local/redisdata/dump.rdb’? y
+[root@test ~]# redis-server /usr/local/redis/redis.conf &
+[1] 31487</code></pre>
+<p>登录查看数据是否恢复</p>
+<pre class=" language-shell"><code class="language-shell">[root@test ~]# redis-cli -a foobared
+127.0.0.1:6379> mget key key1 key2
+1) "001"
+2) "002"
+3) "003"</code></pre>
+<h4 id="AOF自动备份"><a href="#AOF自动备份" class="headerlink" title="AOF自动备份"></a>AOF自动备份</h4><p>然而，因为bgsave的周期间隔和保存触发条件等原因，在服务器宕机时，不可避免的会丢失一部分最新的数据。这就需要一些辅助手段来做持久化补充。</p>
+<p>RDB保存的是键值对，而AOF则用来保存写命令。</p>
+<p><strong>AOF刷盘策略</strong>，由于aof追加动作是和客户端请求处理串行执行的，所以每次都刷盘对性能影响较大，因此都是先追加到aof_buf缓存区里，而是否同步到AOF文件中则依赖always、everysec(默认)、no的刷盘配置。想比everysec ，always对性能影响较大，而no则容易丢失数据。</p>
+<p><strong>AOF文件重写压缩</strong>，AOF因为保存了请求命令，自然要比RDB更大，并且随着程序的运行，会越来越大，然而，文件中有很多冗余的命令数据是可以压缩的，因为对于某个键值对，某一时刻只会有一个状态。</p>
+<p>redis服务默认是关闭此项配置</p>
+<pre class=" language-shell"><code class="language-shell">###### APPEND ONLY MODE #####
+ 、#####
+appendonly no
+
+# The name of the append only file (default: "appendonly.aof")
+appendfilename "appendonly.aof"
+
+# appendfsync always
+appendfsync everysec
+# appendfsync no</code></pre>
+<p>配置文件的相关参数，前面已经详细介绍过。<br>AOF文件备份，是备份所有的历史记录以及执行过的命令，和mysql binlog很相似，在恢复时就是重新执次一次之前执行的命令，需要注意的就是在恢复之前，和数据库恢复一样需要手工删除执行过的del或误操作的命令。</p>
+<h4 id="AOF与dump备份不同"><a href="#AOF与dump备份不同" class="headerlink" title="AOF与dump备份不同"></a>AOF与dump备份不同</h4><blockquote>
+<p>1、aof文件备份与dump文件备份不同<br>2、服务读取文件的优先顺序不同，会按照以下优先级进行启动<br>如果只配置AOF,重启时加载AOF文件恢复数据<br>如果同时 配置了RBD和AOF,启动是只加载AOF文件恢复数据<br>如果只配置RBD,启动时将加载dump文件恢复数据</p>
+</blockquote>
+<h4 id="注意：只要配置了aof，但是没有aof文件，这个时候启动的数据库会是空的"><a href="#注意：只要配置了aof，但是没有aof文件，这个时候启动的数据库会是空的" class="headerlink" title="注意：只要配置了aof，但是没有aof文件，这个时候启动的数据库会是空的"></a>注意：只要配置了aof，但是没有aof文件，这个时候启动的数据库会是空的</h4><h3 id="14、Redis-生产优化介绍"><a href="#14、Redis-生产优化介绍" class="headerlink" title="14、Redis 生产优化介绍"></a>14、Redis 生产优化介绍</h3><hr>
+<h4 id="1、内存管理优化"><a href="#1、内存管理优化" class="headerlink" title="1、内存管理优化"></a>1、内存管理优化</h4><pre class=" language-shell"><code class="language-shell">hash-max-ziplist-entries 512
+hash-max-ziplist-value 64
+list-max-ziplist-entries 512
+list-max-ziplist-value 64</code></pre>
+<p>list的成员与值都不太大的时候会采用紧凑格式来存储，相对内存开销也较小,在linux环境运行Redis时，如果系统的内存比较小，这个时候自动备份会有可能失败，需要修改系统的<strong>vm.overcommit_memory</strong> 参数，这个参数是linux系统的内存分配策略。</p>
+<blockquote>
+<pre><code> 0 表示内核将检查是否有足够的可用内存供应用进程使用；如果有足够的可用内存，内存申请允许；否则，内存申请失败，并把错误返回给应用进程。
+ 1 表示内核允许分配所有的物理内存，而不管当前的内存状态如何。
+ 2 表示内核允许分配超过所有物理内存和交换空间总和的内存</code></pre><p>Redis官方的说明是，建议将vm.overcommit_memory的值修改为1，可以用下面几种方式进行修改：<br>（1）编辑/etc/sysctl.conf ，改vm.overcommit_memory=1，然后sysctl -p 使配置文件生效<br>（2）sysctl vm.overcommit_memory=1<br>（3）echo 1 &gt; /proc/sys/vm/overcommit_memory</p>
+</blockquote>
+<h4 id="2、内存预分配"><a href="#2、内存预分配" class="headerlink" title="2、内存预分配"></a>2、内存预分配</h4><h4 id="3、持久化机制"><a href="#3、持久化机制" class="headerlink" title="3、持久化机制"></a>3、持久化机制</h4><blockquote>
+<pre><code> 定时快照：效率不高，会丢失数据
+ AOF：保持数据完整性（一个实例的数量不要太大2G最大）</code></pre></blockquote>
+<h4 id="优化总结"><a href="#优化总结" class="headerlink" title="优化总结"></a>优化总结</h4><blockquote>
+<p>1）根据业务需要选择合适的数据类型<br>2）当业务场景不需持久化时就关闭所有持久化方式（采用ssd磁盘来提升效率）<br>3）不要使用虚拟内存的方式，每秒实时写入AOF<br>4）不要让REDIS所在的服务器物理内存使用超过内存总量的3/5<br>5）要使用maxmemory<br>6）大数据量按业务分开使用多个redis实例</p>
+</blockquote>
+<h3 id="15、Redis集群应用"><a href="#15、Redis集群应用" class="headerlink" title="15、Redis集群应用"></a>15、Redis集群应用</h3><hr>
+<p>集群是将多个redis实例集中在一起，实现同一业务需求，或者实现高可用与负载均衡</p>
+<p>到底有哪些集群方案呢？？</p>
+<h4 id="1、haproxy-keepalived-redis集群"><a href="#1、haproxy-keepalived-redis集群" class="headerlink" title="1、haproxy+keepalived+redis集群"></a>1、haproxy+keepalived+redis集群</h4><p><img src="https://gitee.com/fly_tom/use/raw/master/redis8.png" alt=""></p>
+<p>1）通过redis的配置文件，实现主从复制、读写分离<br>2）通过haproxy的配置，实现负载均衡，当从故障时也会及时从集群中T除<br>3）利用keepalived来实现负载的高可用</p>
+<h4 id="2、redis官方Sentinel集群管理工具"><a href="#2、redis官方Sentinel集群管理工具" class="headerlink" title="2、redis官方Sentinel集群管理工具"></a>2、redis官方Sentinel集群管理工具</h4><p><img src="https://gitee.com/fly_tom/use/raw/master/redis9.png" alt=""><br>1）sentinel负责对集群中的主从服务监控、提醒和自动故障转移<br>2）redis集群负责对外提供服务</p>
+<h4 id="3、Redis-Cluster"><a href="#3、Redis-Cluster" class="headerlink" title="3、Redis Cluster"></a>3、Redis Cluster</h4><p>Redis Cluster是Redis的分布式解决方案，在Redis 3.0版本正式推出的，有效解决了Redis分布式方面的需求。当遇到单机内存、并发、流量等瓶颈时，可以采用Cluster架构达到负载均衡的目的。<br><img src="https://gitee.com/fly_tom/use/raw/master/redis10.png" alt=""><br>1）官方推荐，毋庸置疑。<br>2）去中心化，集群最大可增加1000个节点，性能随节点增加而线性扩展。<br>3）管理方便，后续可自行增加或摘除节点，移动分槽等等。<br>4）简单，易上手。</p>
+<h3 id="16、Pipeline（管道）机制"><a href="#16、Pipeline（管道）机制" class="headerlink" title="16、Pipeline（管道）机制"></a>16、<strong>Pipeline（管道）机制</strong></h3><hr>
+<p>Redis 提供了批量操作命令（例如 mget、mset 等），有效地节约 RTT。但大部分命令是不支持批量操作的，例如要执行 n 次 hgetall 命令，并没有 mhgetall 命令存在，需要消耗 n 次 RTT。</p>
+<p><code>Redis</code> 的客户端和服务端可能部署在不同的机器上。例如客户端在北京，<code>Redis</code> 服务端在上海，两地直线距离约为 1300 公里，那么 1 次 <code>RTT</code> 时间 = 1300×2/(300000×2/3) = 13 毫秒（光在真空中 传输速度为每秒 30 万公里，这里假设光纤为光速的 2/3），那么客户端在 1 秒 内大约只能执行 80 次左右的命令，这个和 <code>Redis</code> 的高并发高吞吐特性背道而驰。</p>
+<p>Pipeline（流水线）机制能改善上面这类问题，它能将一组 <code>Redis</code> 命令进 行组装，通过一次 <code>RTT</code> 传输给 <code>Redis</code>，再将这组 <code>Redis</code> 命令的执行结果按顺序返回给客户端。</p>
+<p>不使用 Pipeline 的命令执行流程：<br><img src="https://gitee.com/fly_tom/use/raw/master/redis15.png" alt=""></p>
+<p>使用 Pipeline 的命令执行流程：</p>
+<p><img src="https://gitee.com/fly_tom/use/raw/master/redis16.png" alt=""></p>
+<p><code>Redis</code> 的流水线是一种通信协议，没有办法通过客户端演示给大家，这里以 <code>Jedis</code> 为例，通过 <code>Java API</code> 或者使用 <code>Spring</code> 操作它（代码来源于互联网）：</p>
+<pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+ * 测试Redis流水线
+ * @author liu
+ */</span>
+publicclass TestPipelined <span class="token punctuation">{</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * 使用Java API测试流水线的性能
+     */</span>
+    <span class="token annotation punctuation">@SuppressWarnings</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token string">"unused"</span><span class="token punctuation">,</span> <span class="token string">"resource"</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testPipelinedByJavaAPI</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        JedisPoolConfig jedisPoolConfig <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JedisPoolConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jedisPoolConfig<span class="token punctuation">.</span><span class="token function">setMaxIdle</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jedisPoolConfig<span class="token punctuation">.</span><span class="token function">setMaxTotal</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jedisPoolConfig<span class="token punctuation">.</span><span class="token function">setMaxWaitMillis</span><span class="token punctuation">(</span><span class="token number">20000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        JedisPool jedisPool <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">JedisPool</span><span class="token punctuation">(</span>jedisPoolConfig<span class="token punctuation">,</span><span class="token string">"localhost"</span><span class="token punctuation">,</span><span class="token number">6379</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        Jedis jedis <span class="token operator">=</span> jedisPool<span class="token punctuation">.</span><span class="token function">getResource</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">long</span> start <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 开启流水线</span>
+        Pipeline pipeline <span class="token operator">=</span> jedis<span class="token punctuation">.</span><span class="token function">pipelined</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 测试10w条数据读写</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">100000</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">int</span> j <span class="token operator">=</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+            pipeline<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">"key"</span> <span class="token operator">+</span> j<span class="token punctuation">,</span> <span class="token string">"value"</span> <span class="token operator">+</span> j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            pipeline<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">"key"</span> <span class="token operator">+</span> j<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment" spellcheck="true">// 只执行同步但不返回结果</span>
+        <span class="token comment" spellcheck="true">//pipeline.sync();</span>
+        <span class="token comment" spellcheck="true">// 以list的形式返回执行过的命令的结果</span>
+        List<span class="token operator">&lt;</span>Object<span class="token operator">></span> result <span class="token operator">=</span> pipeline<span class="token punctuation">.</span><span class="token function">syncAndReturnAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">long</span> end <span class="token operator">=</span> System<span class="token punctuation">.</span><span class="token function">currentTimeMillis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment" spellcheck="true">// 计算耗时</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"耗时"</span> <span class="token operator">+</span> <span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"毫秒"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">/**
+     * 使用RedisTemplate测试流水线
+     */</span>
+    <span class="token annotation punctuation">@SuppressWarnings</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token string">"resource"</span><span class="token punctuation">,</span> <span class="token string">"rawtypes"</span><span class="token punctuation">,</span> <span class="token string">"unchecked"</span><span class="token punctuation">,</span> <span class="token string">"unused"</span> <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testPipelineBySpring</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        ApplicationContext applicationContext <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ClassPathXmlApplicationContext</span><span class="token punctuation">(</span><span class="token string">"spring.xml"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        RedisTemplate redisTemplate <span class="token operator">=</span> <span class="token punctuation">(</span>RedisTemplate<span class="token punctuation">)</span>applicationContext<span class="token punctuation">.</span><span class="token function">getBean</span><span class="token punctuation">(</span><span class="token string">"redisTemplate"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        List<span class="token operator">&lt;</span>Object<span class="token operator">></span> list <span class="token operator">=</span> redisTemplate<span class="token punctuation">.</span><span class="token function">executePipelined</span><span class="token punctuation">(</span>
+                <span class="token punctuation">(</span>RedisConnection connection<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span><span class="token punctuation">{</span>
+                    <span class="token comment" spellcheck="true">//此行可以略去，调用与否均可</span>
+                    <span class="token comment" spellcheck="true">//connection.openPipeline();</span>
+                    <span class="token comment" spellcheck="true">//模拟一千次写入与查询</span>
+                    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span><span class="token number">0</span> <span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">1000</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                        <span class="token comment" spellcheck="true">//选择直接复用redisTemplate的序列化方法</span>
+                        connection<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>keySerializer<span class="token punctuation">.</span><span class="token function">serialize</span><span class="token punctuation">(</span><span class="token string">"testKey"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                            valueSerializer<span class="token punctuation">.</span><span class="token function">serialize</span><span class="token punctuation">(</span><span class="token string">"value"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        connection<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span>keySerializer<span class="token punctuation">.</span><span class="token function">serialize</span><span class="token punctuation">(</span><span class="token string">"testKey"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token comment" spellcheck="true">//不可以调用connection.closePipeline()方法，</span>
+                    因为本来就有隐式的代理调用收集了返回值
+                    <span class="token comment" spellcheck="true">//List&lt;Object> closePipeline =connection.closePipeline();</span>
+                    <span class="token comment" spellcheck="true">//依靠代理的返回，此处应该固定返回null</span>
+                    <span class="token keyword">return</span> null<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>redisTemplate<span class="token punctuation">.</span><span class="token function">getValueSerializer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre>
+<p>网上写的测试结果为：使用 Java API 耗时在 550ms 到 700ms 之间，也就是不到 1s 就完成了 10 万次读写，使用 Spring 耗时在 1100ms 到 1300ms 之间。这个与之前一条一条命令使用，1s 内就发送几十几百条（客户端和服务端距离导致）命令的差距不是一般的大了。</p>
+<p>注意，这里只是为了测试性能而已，当你要执行很多的命令并返回结果的时候，需要考虑 List 对象的大小，因为它会“吃掉”服务器上许多的内存空间，严重时会导致内存不足，引发 <code>JVM</code> 溢出异常，所以在工作环境中，是需要读者自己去评估的，可以考虑使用迭代的方式去处理。</p>
+<p>– 缺点—</p>
+<p>​    注意，Pipelined并不能保证原子性，即pipelined执行的内容可能会被其他客户端或是线程的指令”插队”，若想要原子性操作，需要使用事务。</p>
+<h3 id="17、pipeline-和原生批处理区别"><a href="#17、pipeline-和原生批处理区别" class="headerlink" title="17、pipeline 和原生批处理区别"></a>17、<strong>pipeline 和原生批处理区别</strong></h3><p><strong>原生批处理</strong>：提供了批量操作命令(例如<code>mget</code>、<code>mset</code>等)，有效地节约<code>RTT</code>。但大部分命令是不支持批量操作的，例如要执行n次<code>hgetall</code>命令，并没有<code>mhgetall</code>命令存在，需要消耗n次<code>RTT</code>。<code>Redis</code>的客户端和服务端可能部署在不同的机器上。例如客户端在北京，<code>Redis</code>服务端在上海，两地直线距离约为1300公里，那么1次<code>RTT</code>时间=1300×2/(300000×2/3)=13毫秒(光在真空中传输速度为每秒30万公里，这里假设光纤为光速的2/3)，那么客户端在1秒内大约只能执行80次左右的命令，这个和<code>Redis</code>的高并发高吞吐特性背道而驰。</p>
+<p><strong>Pipeline(流水线)</strong>：机制能改善上面这类问题，它能将一组<code>Redis</code>命令进行组装，通过一次<code>RTT</code>传输给<code>Redis</code>，再将这组<code>Redis</code>命令的执行结果按顺序返回给客户端。</p>
+<p><strong>原生批量命令(<code>mset</code>, <code>mget</code>)与Pipeline对比</strong><br>可以使用Pipeline模拟出批量操作的效果，但是在使用时要注意它与原生批量命令的区别，具体包含以下几点：</p>
+<ul>
+<li>原生批量命令是原子的，<strong>Pipeline是非原子的</strong>。</li>
+<li>原生批量命令是一个命令对应多个key，<code>Pipeline</code>支持多个命令。</li>
+<li>原生批量命令是<code>Redis</code>服务端支持实现的，而<code>Pipeline</code>需要服务端和客户端的共同实现。</li>
+</ul>
+<blockquote>
+<p> Pipeline虽然好用，但是每次Pipeline组装的命令个数不能没有节制，否则一次组装Pipeline数据量过大，一方面会增加客户端的等待时间，另一方面会造成一定的网络阻塞，可以将一次包含大量命令的Pipeline拆分成多次较小的Pipeline来完成。</p>
+</blockquote>
+<blockquote>
+<p> <code>Pipeline</code>只能操作一个<code>Redis</code>实例，但是即使在分布式<code>Redis</code>场景中，也可以作为批量操作的重要优化手段；</p>
+</blockquote>
+<h3 id="工作总结遇到的问题："><a href="#工作总结遇到的问题：" class="headerlink" title="工作总结遇到的问题："></a>工作总结遇到的问题：</h3><p>1、集群中使用lua脚本执行：多个命令对不同的键操作，报错”CROSSSLOT Keys in request don’t hash to the same slot”主要原因为：redis 集群中，会将键分配的不同的槽位上，然后分配到对应的机器上，当操作的键为一个的时候，自然没问题，但如果操作的键为多个的时候，集群如何知道这个操作落到那个机器呢？比如简单的<code>mget</code>命令，<code>mget test1 test2 test3</code></p>
+<p>​    针对这个问题，redis官方为我们提供了<code>hash tag</code>这个方法来解决，什么意思呢，我们取键中的一段来计算 hash，计算落入那个槽中，这样同一个功能不同的 key 就可以落入同一个槽位了，hash tag 是通过<code>{}</code>这对括号括起来的字符串，比如上面的，我们改为<code>mset lua{yes} fascinating redis{yes} powerful</code>，就可以执行成功了，我这里 mset 这个操作落到了 7002 端口的机器。</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+       
+    </div>
+</article>
+
+
+
+
+
+
+
+    
+
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2017 FlyTom
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+</body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 642px;
+    }
+    .nav.fullscreen {
+        margin-left: -642px;
+    }
+    .nav-left {
+        width: 220px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 642px;
+        }
+        .nav.fullscreen {
+            margin-left: -642px;
+        }
+        .nav-left {
+            width: 250px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 642px;
+            margin-left: -642px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
+</html>
