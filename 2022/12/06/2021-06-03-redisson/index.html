@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://flytom.club/categories/index.html">
+<meta property="og:title" content="contact">
+<meta property="og:url" content="https://yflytom.github.io/contact/index-1.html">
 <meta property="og:site_name" content="Tom">
 <meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-17T00:56:56.595Z">
+<meta property="og:updated_time" content="2019-12-26T02:10:56.481Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="contact">
 <meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 
 
@@ -515,7 +515,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="52">
-<input type="hidden" id="yelog_site_word_count" value="275.3k">
+<input type="hidden" id="yelog_site_word_count" value="272.5k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1265,7 +1265,7 @@
 <h4 id="redis-原始分布式锁实现"><a href="#redis-原始分布式锁实现" class="headerlink" title="redis 原始分布式锁实现"></a>redis 原始分布式锁实现</h4><p>** 加锁**<br>redis 分布式锁背景首先是基于setnx 实现，setnx 当key 不存在时才会创建value ,并且返回1 ，否则key 值存在，创建value 失败，返回0；基于这个属性，我们可以满足分布式做的互斥性。但是还会存在一个问题，比如客户端上锁后，还未释放锁，异常宕机或者hang 住了。这时候其他客户端就始终无法获取锁，造成业务不可用情况；</p>
 <p>解决方案就是在给锁的key 设置过期时间，及expire key score ； 需要注意的是，要保证setNx 操作和expire 两个操作是原子性的，否则setNx 设置后，expire 还未执行，同样无法解决上述问题。redis 想要保证两个操作是原子性，可以通过lua 脚本来实现；实现方法如下</p>
 <pre class=" language-java"><code class="language-java">  <span class="token keyword">private</span> <span class="token keyword">boolean</span> <span class="token function">doTryLock</span><span class="token punctuation">(</span>String lockKey<span class="token punctuation">,</span> <span class="token keyword">int</span> lockSeconds<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    RedisScript<span class="token operator">&lt;</span>Boolean<span class="token operator">&gt;</span> SETNX_AND_EXPIRE_SCRIPT<span class="token punctuation">;</span>
+    RedisScript<span class="token operator">&lt;</span>Boolean<span class="token operator">></span> SETNX_AND_EXPIRE_SCRIPT<span class="token punctuation">;</span>
     StringBuilder sb <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"if (redis.call('setnx', KEYS[1], ARGV[1]) == 1) then\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"\tredis.call('expire', KEYS[1], tonumber(ARGV[2]))\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1273,7 +1273,7 @@
     sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"else\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"\treturn false\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     sb<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"end"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    SETNX_AND_EXPIRE_SCRIPT <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RedisScriptImpl</span><span class="token operator">&lt;</span>Boolean<span class="token operator">&gt;</span><span class="token punctuation">(</span>sb<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Boolean<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    SETNX_AND_EXPIRE_SCRIPT <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RedisScriptImpl</span><span class="token operator">&lt;</span>Boolean<span class="token operator">></span><span class="token punctuation">(</span>sb<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Boolean<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> stringRedisTemplate
         <span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span>SETNX_AND_EXPIRE_SCRIPT<span class="token punctuation">,</span> Collections<span class="token punctuation">.</span><span class="token function">singletonList</span><span class="token punctuation">(</span>lockKey<span class="token punctuation">)</span><span class="token punctuation">,</span> lockValue<span class="token punctuation">,</span>
             String<span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span>lockSeconds<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1281,7 +1281,7 @@
 </code></pre>
 <p><strong>释放锁</strong><br>锁的释放要遵循解铃还须系铃人，不可以出现a 把b 的锁给释放，这样的话锁就失去了意义；redis 释放锁首先判断释放锁的线程是否是加锁的线程，如果是允许删除，不是则无法删除key。集成实现下图所示</p>
 <pre class=" language-java"><code class="language-java">  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">unlock</span><span class="token punctuation">(</span>String lockKey<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    RedisScript<span class="token operator">&lt;</span>Boolean<span class="token operator">&gt;</span> DEL_IF_GET_EQUALS<span class="token punctuation">;</span>
+    RedisScript<span class="token operator">&lt;</span>Boolean<span class="token operator">></span> DEL_IF_GET_EQUALS<span class="token punctuation">;</span>
     StringBuilder sbr <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">StringBuilder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     sbr<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"if (redis.call('get', KEYS[1]) == ARGV[1]) then\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     sbr<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"\tredis.call('del', KEYS[1])\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -1289,7 +1289,7 @@
     sbr<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"else\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     sbr<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"\treturn false\n"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     sbr<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">"end"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    DEL_IF_GET_EQUALS <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RedisScriptImpl</span><span class="token operator">&lt;</span>Boolean<span class="token operator">&gt;</span><span class="token punctuation">(</span>sbr<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Boolean<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    DEL_IF_GET_EQUALS <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">RedisScriptImpl</span><span class="token operator">&lt;</span>Boolean<span class="token operator">></span><span class="token punctuation">(</span>sbr<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> Boolean<span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment" spellcheck="true">// 忽略结果</span>
     stringRedisTemplate<span class="token punctuation">.</span><span class="token function">execute</span><span class="token punctuation">(</span>DEL_IF_GET_EQUALS<span class="token punctuation">,</span> Collections<span class="token punctuation">.</span><span class="token function">singletonList</span><span class="token punctuation">(</span>lockKey<span class="token punctuation">)</span><span class="token punctuation">,</span> lockValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span></code></pre>
@@ -1341,11 +1341,11 @@
 </ul>
 <p>续期或者说延长KEY的过期时间在Redisson使用watch dog实现，理解为用于续期的守护线程，底层依赖于Netty的时间轮HashedWheelTimer和任务io.netty.util.Timeout实现，俗称看门狗</p>
 <h4 id="具体的代码实现："><a href="#具体的代码实现：" class="headerlink" title="具体的代码实现："></a>具体的代码实现：</h4><p>引入依赖</p>
-<pre class=" language-java"><code class="language-java"><span class="token operator">&lt;</span>dependency<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span>groupId<span class="token operator">&gt;</span>org<span class="token punctuation">.</span>redisson<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span>artifactId<span class="token operator">&gt;</span>redisson<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">&gt;</span>
-    <span class="token operator">&lt;</span>version<span class="token operator">&gt;</span><span class="token number">3.13</span><span class="token punctuation">.</span><span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>version<span class="token operator">&gt;</span>
-<span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">&gt;</span></code></pre>
+<pre class=" language-java"><code class="language-java"><span class="token operator">&lt;</span>dependency<span class="token operator">></span>
+    <span class="token operator">&lt;</span>groupId<span class="token operator">></span>org<span class="token punctuation">.</span>redisson<span class="token operator">&lt;</span><span class="token operator">/</span>groupId<span class="token operator">></span>
+    <span class="token operator">&lt;</span>artifactId<span class="token operator">></span>redisson<span class="token operator">&lt;</span><span class="token operator">/</span>artifactId<span class="token operator">></span>
+    <span class="token operator">&lt;</span>version<span class="token operator">></span><span class="token number">3.13</span><span class="token punctuation">.</span><span class="token number">1</span><span class="token operator">&lt;</span><span class="token operator">/</span>version<span class="token operator">></span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>dependency<span class="token operator">></span></code></pre>
 <p>Redisson配置文件：</p>
 <pre class=" language-java"><code class="language-java"><span class="token annotation punctuation">@Bean</span>
 <span class="token keyword">public</span> RedissonClient <span class="token function">redissonClient</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>

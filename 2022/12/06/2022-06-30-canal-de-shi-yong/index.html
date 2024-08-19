@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://flytom.club/categories/index.html">
+<meta property="og:title" content="contact">
+<meta property="og:url" content="https://yflytom.github.io/contact/index-1.html">
 <meta property="og:site_name" content="Tom">
 <meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-17T00:56:56.595Z">
+<meta property="og:updated_time" content="2019-12-26T02:10:56.481Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="contact">
 <meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 
 
@@ -515,7 +515,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="52">
-<input type="hidden" id="yelog_site_word_count" value="275.3k">
+<input type="hidden" id="yelog_site_word_count" value="272.5k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1334,8 +1334,8 @@ canal.instance.filter.black.regex=</code></pre>
 <p>这就启动成功了。</p>
 <h2 id="Java客户端操作"><a href="#Java客户端操作" class="headerlink" title="Java客户端操作"></a><strong>Java客户端操作</strong></h2><p>首先引入maven依赖：</p>
 <pre class=" language-text"><code class="language-text"><dependency>
-    <groupid>com.alibaba.otter</groupid>
-    <artifactid>canal.client</artifactid>
+    <groupId>com.alibaba.otter</groupId>
+    <artifactId>canal.client</artifactId>
     <version>1.1.4</version>
 </dependency></code></pre>
 <p>然后创建一个canal项目，使用SpringBoot构建，如图所示：</p>
@@ -1389,7 +1389,7 @@ canal.instance.filter.black.regex=</code></pre>
     <span class="token comment" spellcheck="true">/**
      * 打印canal server解析binlog获得的实体类信息
      */</span>
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">printEntry</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>Entry<span class="token operator">&gt;</span> entrys<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">printEntry</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>Entry<span class="token operator">></span> entrys<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">for</span> <span class="token punctuation">(</span>Entry entry <span class="token operator">:</span> entrys<span class="token punctuation">)</span> <span class="token punctuation">{</span>
             <span class="token keyword">if</span> <span class="token punctuation">(</span>entry<span class="token punctuation">.</span><span class="token function">getEntryType</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> EntryType<span class="token punctuation">.</span>TRANSACTIONBEGIN <span class="token operator">||</span> entry<span class="token punctuation">.</span><span class="token function">getEntryType</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> EntryType<span class="token punctuation">.</span>TRANSACTIONEND<span class="token punctuation">)</span> <span class="token punctuation">{</span>
                 <span class="token comment" spellcheck="true">//开启/关闭事务的实体类型，跳过</span>
@@ -1425,17 +1425,17 @@ canal.instance.filter.black.regex=</code></pre>
                     <span class="token comment" spellcheck="true">//如果是更新的语句</span>
                 <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
                     <span class="token comment" spellcheck="true">//变更前的数据</span>
-                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"-------&gt;; before"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"------->; before"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
                     <span class="token function">printColumn</span><span class="token punctuation">(</span>rowData<span class="token punctuation">.</span><span class="token function">getBeforeColumnsList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
                     <span class="token comment" spellcheck="true">//变更后的数据</span>
-                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"-------&gt;; after"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"------->; after"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
                     <span class="token function">printColumn</span><span class="token punctuation">(</span>rowData<span class="token punctuation">.</span><span class="token function">getAfterColumnsList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
                 <span class="token punctuation">}</span>
             <span class="token punctuation">}</span>
         <span class="token punctuation">}</span>
     <span class="token punctuation">}</span>
 
-    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">printColumn</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>Column<span class="token operator">&gt;</span> columns<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">printColumn</span><span class="token punctuation">(</span>List<span class="token operator">&lt;</span>Column<span class="token operator">></span> columns<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token keyword">for</span> <span class="token punctuation">(</span>Column column <span class="token operator">:</span> columns<span class="token punctuation">)</span> <span class="token punctuation">{</span>
             System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>column<span class="token punctuation">.</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">" : "</span> <span class="token operator">+</span> column<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">"    update="</span> <span class="token operator">+</span> column<span class="token punctuation">.</span><span class="token function">getUpdated</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
         <span class="token punctuation">}</span>

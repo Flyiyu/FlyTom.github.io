@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://flytom.club/categories/index.html">
+<meta property="og:title" content="contact">
+<meta property="og:url" content="https://yflytom.github.io/contact/index-1.html">
 <meta property="og:site_name" content="Tom">
 <meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-17T00:56:56.595Z">
+<meta property="og:updated_time" content="2019-12-26T02:10:56.481Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="contact">
 <meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 
 
@@ -515,7 +515,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="52">
-<input type="hidden" id="yelog_site_word_count" value="275.3k">
+<input type="hidden" id="yelog_site_word_count" value="272.5k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1418,7 +1418,7 @@ b874c56bec49        mysql               "docker-entrypoint.sh"   4 seconds ago  
 ad10e4bc5c6a0f61cbad43898de71d366117d120e39db651844c0e73863b9434
 [root@localhost ~]# docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                    NAMES
-ad10e4bc5c6a        mysql               "docker-entrypoint.sh"   4 seconds ago       Up 2 seconds        0.0.0.0:3306-&gt;3306/tcp   mysql02</code></pre>
+ad10e4bc5c6a        mysql               "docker-entrypoint.sh"   4 seconds ago       Up 2 seconds        0.0.0.0:3306->3306/tcp   mysql02</code></pre>
 <p>几个其他的高级操作</p>
 <pre class=" language-shell"><code class="language-shell">docker run --name mysql03 -v /conf/mysql:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 把主机的/conf/mysql文件夹挂载到 mysqldocker容器的/etc/mysql/conf.d文件夹里面
@@ -1437,7 +1437,7 @@ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag --
 FROM centos
 
 #维护人的信息
-MAINTAINER The CentOS Project &lt;303323496@qq.com&gt;
+MAINTAINER The CentOS Project <303323496@qq.com>
 
 #安装httpd软件包
 RUN yum -y update

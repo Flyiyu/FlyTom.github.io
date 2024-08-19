@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://flytom.club/categories/index.html">
+<meta property="og:title" content="contact">
+<meta property="og:url" content="https://yflytom.github.io/contact/index-1.html">
 <meta property="og:site_name" content="Tom">
 <meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-17T00:56:56.595Z">
+<meta property="og:updated_time" content="2019-12-26T02:10:56.481Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="contact">
 <meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 
 
@@ -515,7 +515,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="52">
-<input type="hidden" id="yelog_site_word_count" value="275.3k">
+<input type="hidden" id="yelog_site_word_count" value="272.5k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1648,7 +1648,7 @@
 select id from t where datediff(day,createdate,’2005-11-30′) = 0    
 -–‘2005-11-30’    --生成的id</code></pre>
 <p>应改为:</p>
-<pre class=" language-mysql"><code class="language-mysql">select id from t where name like 'abc%'select id from t where createdate &gt;= '2005-11-30' and createdate &lt; '2005-12-1'</code></pre>
+<pre class=" language-mysql"><code class="language-mysql">select id from t where name like 'abc%'select id from t where createdate >= '2005-11-30' and createdate < '2005-12-1'</code></pre>
 <ol start="10">
 <li><p>不要在 where 子句中的“=”左边进行函数、算术运算或其他表达式运算，否则系统将可能无法正确使用索引。</p>
 </li>
@@ -1724,7 +1724,7 @@ select id from t where datediff(day,createdate,’2005-11-30′) = 0
 <p>乐观锁（给表加一个版本号字段） 这个并不是乐观锁的定义，给表加版本号，是数据库实现乐观锁的一种方式。</p>
 <pre class=" language-mysql"><code class="language-mysql">SELECT data AS old_data, version AS old_version FROM …;
 //根据获取的数据进行业务操作，得到new_data和new_version
-UPDATE SET data = new_data, version = new_version WHERE version = old_versionif (updated row &gt; 0) 
+UPDATE SET data = new_data, version = new_version WHERE version = old_versionif (updated row > 0) 
 {// 乐观锁获取成功，操作完成} else {// 乐观锁获取失败，回滚并重试}</code></pre>
 <p><strong>注意：</strong> </p>
 <p>乐观锁在不发生取锁失败的情况下开销比悲观锁小，但是一旦发生失败回滚开销则比较大，因此适合用在取锁失败概率比较小的场景，可以提升系统并发性能<br>乐观锁还适用于一些比较特殊的场景，例如在业务操作过程中无法和数据库保持连接等悲观锁无法适用的地方。</p>
@@ -1815,9 +1815,9 @@ mysqlbinlog --start-position=180 --stop-position=496 mysql-bin.000027
 
 show binlog events in "mysql-bin.003055" limit 可以进行分页第几条到第几条
 
-./mysqlbinlog.exe -v --base64-output=decode-rows --start-datetime="2023-04-25 00:00:00" --stop-datetime="2023-04-25 23:00:00" --database=pcs9700-congxi E:\mysql-bin.003055 &gt; E:\3055.sql
+./mysqlbinlog.exe -v --base64-output=decode-rows --start-datetime="2023-04-25 00:00:00" --stop-datetime="2023-04-25 23:00:00" --database=pcs9700-congxi E:\mysql-bin.003055 > E:\3055.sql
 
-./mysqlbinlog -v --base64-output=decode-rows --database=pcs9700-congxi mysql-bin.003055 &gt; 3055.sql
+./mysqlbinlog -v --base64-output=decode-rows --database=pcs9700-congxi mysql-bin.003055 > 3055.sql
 
 /opt/docker/nrcloud/mysql/data/mysql-bin.000036 |more
 查看日志命令

@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="http://flytom.club/categories/index.html">
+<meta property="og:title" content="contact">
+<meta property="og:url" content="https://yflytom.github.io/contact/index-1.html">
 <meta property="og:site_name" content="Tom">
 <meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-17T00:56:56.595Z">
+<meta property="og:updated_time" content="2019-12-26T02:10:56.481Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="contact">
 <meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 
 
@@ -515,7 +515,7 @@
     </div>
 </div>
 <input type="hidden" id="yelog_site_posts_number" value="52">
-<input type="hidden" id="yelog_site_word_count" value="275.3k">
+<input type="hidden" id="yelog_site_word_count" value="272.5k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -1261,7 +1261,7 @@
 <span class="token constant">binlog-format</span><span class="token attr-value"><span class="token punctuation">=</span>ROW 　　# 选择 ROW 模式</span>
 <span class="token constant">server_id</span><span class="token attr-value"><span class="token punctuation">=</span>1 　　　　   # 配置 MySQL replaction 需要定义，不要和 canal 的 slaveId 重复</span></code></pre>
 <p>重启mysql，用以下命令检查一下binlog是否正确启动：<code>service mysqld restart</code></p>
-<pre class=" language-sql"><code class="language-sql">mysql<span class="token operator">&gt;</span> <span class="token keyword">show</span> variables <span class="token operator">like</span> <span class="token string">'log_bin%'</span><span class="token punctuation">;</span>
+<pre class=" language-sql"><code class="language-sql">mysql<span class="token operator">></span> <span class="token keyword">show</span> variables <span class="token operator">like</span> <span class="token string">'log_bin%'</span><span class="token punctuation">;</span>
 <span class="token operator">+</span><span class="token comment" spellcheck="true">---------------------------------+----------------------------------+</span>
 <span class="token operator">|</span> Variable_name                   <span class="token operator">|</span> <span class="token keyword">Value</span>                            <span class="token operator">|</span>
 <span class="token operator">+</span><span class="token comment" spellcheck="true">---------------------------------+----------------------------------+</span>
@@ -1272,7 +1272,7 @@
 <span class="token operator">|</span> log_bin_use_v1_row_events       <span class="token operator">|</span> <span class="token keyword">OFF</span>                              <span class="token operator">|</span>
 <span class="token operator">+</span><span class="token comment" spellcheck="true">---------------------------------+----------------------------------+</span>
 <span class="token number">5</span> <span class="token keyword">rows</span> <span class="token operator">in</span> <span class="token keyword">set</span> <span class="token punctuation">(</span><span class="token number">0.00</span> sec<span class="token punctuation">)</span>
-mysql<span class="token operator">&gt;</span> <span class="token keyword">show</span> variables <span class="token operator">like</span> <span class="token string">'binlog_format%'</span><span class="token punctuation">;</span>
+mysql<span class="token operator">></span> <span class="token keyword">show</span> variables <span class="token operator">like</span> <span class="token string">'binlog_format%'</span><span class="token punctuation">;</span>
 <span class="token operator">+</span><span class="token comment" spellcheck="true">---------------+-------+</span>
 <span class="token operator">|</span> Variable_name <span class="token operator">|</span> <span class="token keyword">Value</span> <span class="token operator">|</span>
 <span class="token operator">+</span><span class="token comment" spellcheck="true">---------------+-------+</span>
@@ -1308,7 +1308,7 @@ spring.datasource:
   username: root
   password: root
   driver-class-name: com.mysql.jdbc.Driver
-  url: jdbc:mysql://${spring.datasource.address}/${spring.datasource.database}?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false
+  url: jdbc:mysql://${spring.datasource.address}/${spring.datasource.database}?useUnicode=true&characterEncoding=UTF-8&useSSL=false
   hikari:
     maximum-pool-size: 30
     minimum-idle: 1
@@ -1593,7 +1593,7 @@ type：操作类型，比如DELETE，UPDATE，INSERT</code></pre>
 <blockquote>
 <p>rocketmq-console-ng-1.0.1.jar</p>
 </blockquote>
-<h4 id="rocket-mq控制台安装"><a href="#rocket-mq控制台安装" class="headerlink" title="rocket mq控制台安装"></a>rocket mq控制台安装</h4><pre class=" language-shell"><code class="language-shell">nohup java -jar rocketmq-console-ng-1.0.1.jar --server.port=17890 --rocketmq.config.namesrvAddr=192.168.1.101:9876 &gt; runtime.log 2&gt;&amp;1 &amp;</code></pre>
+<h4 id="rocket-mq控制台安装"><a href="#rocket-mq控制台安装" class="headerlink" title="rocket mq控制台安装"></a>rocket mq控制台安装</h4><pre class=" language-shell"><code class="language-shell">nohup java -jar rocketmq-console-ng-1.0.1.jar --server.port=17890 --rocketmq.config.namesrvAddr=192.168.1.101:9876 > runtime.log 2>&1 &</code></pre>
 <h5 id="自启动脚本"><a href="#自启动脚本" class="headerlink" title="自启动脚本"></a>自启动脚本</h5><h6 id="添加shell脚本"><a href="#添加shell脚本" class="headerlink" title="添加shell脚本"></a>添加shell脚本</h6><p>vim rocket-admin.sh</p>
 <pre class=" language-shell"><code class="language-shell">#!/bin/bash
 # chkconfig: 2345 85 15
@@ -1602,7 +1602,7 @@ type：操作类型，比如DELETE，UPDATE，INSERT</code></pre>
 # 工作目录修改成自己的地址
 # 注意！！！ 并且该目录中只能存在一个jar包
 APP_HOME=/users/ems/websophic/rocket-admin/
-JAR_HOME_TOW="`cd ${APP_HOME} &amp;&amp; find -name '*.jar' `"
+JAR_HOME_TOW="`cd ${APP_HOME} && find -name '*.jar' `"
 APP_NAME=${JAR_HOME_TOW:2}
 namesrvAddr=192.168.1.101:9876
 port=17890
@@ -1627,7 +1627,7 @@ start(){
     echo "warn: $APP_NAME is already running. (pid=$pid)"
     echo "================================================="
   else
-    nohup java -jar $APP_NAME --server.port=${port} --rocketmq.config.namesrvAddr=${namesrvAddr} &gt; runtime.log 2&gt;&amp;1 &amp;
+    nohup java -jar $APP_NAME --server.port=${port} --rocketmq.config.namesrvAddr=${namesrvAddr} > runtime.log 2>&1 &
     echo "${APP_NAME}: ${port} start success"
   fi
 }
@@ -1718,12 +1718,12 @@ vim runserver.sh
 JAVA_OPT="${JAVA_OPT} -server -Xms256m -Xmx256m -Xmn128m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=320m"
 
 启动nameserver
-nohup sh ./bin/mqnamesrv &gt;&gt;namesrv.log 2&gt;&amp;1 &amp;
+nohup sh ./bin/mqnamesrv >>namesrv.log 2>&1 &
 
 启动broker
 
 //-c conf/broker.conf autoCreateTopicEnable=true 参数需要带上，不然topic需要手动创建
-nohup sh     ./bin/mqbroker -n 192.168.1.101:9876 &gt;&gt;broker.log 2&gt;&amp;1 &amp; </code></pre>
+nohup sh     ./bin/mqbroker -n 192.168.1.101:9876 >>broker.log 2>&1 & </code></pre>
 <h4 id="主从集群安装"><a href="#主从集群安装" class="headerlink" title="主从集群安装"></a>主从集群安装</h4><p><a href="https://www.cnblogs.com/wtb-26/p/14151036.html" target="_blank" rel="noopener">https://www.cnblogs.com/wtb-26/p/14151036.html</a></p>
 <p><strong>rocketmq默认给出了三种建议配置模式</strong></p>
 <ol>
@@ -1831,7 +1831,7 @@ JAVA_OPT="${JAVA_OPT} -server -Xms512m -Xmx512m -Xmn256m -XX:MetaspaceSize=128m 
 <h3 id="启动集群"><a href="#启动集群" class="headerlink" title="启动集群"></a>启动集群</h3><p>启动namesrv（每台都要启动）</p>
 <pre class=" language-shell"><code class="language-shell">
 # 启动NameServer，NameServer需要先于Broker启动，且如果在生产环境使用，为了保证高可用，建议一般规模的集群启动3个NameServer
-nohup sh bin/mqnamesrv 2&gt;&amp;1 &amp;
+nohup sh bin/mqnamesrv 2>&1 &
 # 验证Name Server 是否启动成功
 tail -100f ~/logs/rocketmqlogs/namesrv.log
 看到The Name Server boot success...即启动成功</code></pre>
@@ -1839,9 +1839,9 @@ tail -100f ~/logs/rocketmqlogs/namesrv.log
 <pre class=" language-shell"><code class="language-shell">
 # 启动Broker集群
 # 在机器A，启动Master broker-a，-c 参数指定broker配置文件地址
-nohup sh bin/mqbroker -c conf/2m-2s-async/broker-a.properties 2&gt;&amp;1 &amp;
+nohup sh bin/mqbroker -c conf/2m-2s-async/broker-a.properties 2>&1 &
 # 在机器A，启动slave broker-b-s，-c 参数指定broker配置文件地址
-nohup sh bin/mqbroker -c conf/2m-2s-async/broker-b-s.properties 2&gt;&amp;1 &amp;
+nohup sh bin/mqbroker -c conf/2m-2s-async/broker-b-s.properties 2>&1 &
 # 验证Name Server 是否启动成功
 tail -100f ~/logs/rocketmqlogs/broker.log
 
@@ -1881,9 +1881,9 @@ if [ ! -d ${LOG_DIR} ];then
 mkdir ${LOG_DIR}
 fi
 cd ${ROCKETMQ_HOME}
-nohup sh bin/mqnamesrv &gt;&gt;namesrv.log 2&gt;&amp;1 &amp;
+nohup sh bin/mqnamesrv >>namesrv.log 2>&1 &
 echo -n "The Name Server boot success..."
-nohup sh bin/mqbroker -n ${ADDR} &gt;&gt;broker.log 2&gt;&amp;1 &amp; 
+nohup sh bin/mqbroker -n ${ADDR} >>broker.log 2>&1 & 
 echo -n "The broker[%s, ${ADDR}] boot success..."
 }
 stop() {
@@ -1934,7 +1934,7 @@ chkconfig --list
 # 工作目录修改成自己的地址
 # 注意！！！ 并且该目录中只能存在一个jar包
 APP_HOME=/users/ems/websophic/xxl-job
-JAR_HOME_TOW="`cd ${APP_HOME} &amp;&amp; find -name '*.jar' `"
+JAR_HOME_TOW="`cd ${APP_HOME} && find -name '*.jar' `"
 APP_NAME=${JAR_HOME_TOW:2}
 port=8099
 cd $APP_HOME
@@ -1958,7 +1958,7 @@ start(){
     echo "warn: $APP_NAME is already running. (pid=$pid)"
     echo "================================================="
   else
-    nohup java -jar $APP_NAME --server.port=${port} 2&gt;&amp;1 &amp;
+    nohup java -jar $APP_NAME --server.port=${port} 2>&1 &
     echo "${APP_NAME}: ${port} start success"
   fi
 }
